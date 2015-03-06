@@ -7151,11 +7151,11 @@ body li a:hover {
   transform-origin: 0 0;
 }
 
-.king {
+.royal {
   margin: 0 auto;
   max-width: 650px;
 }
-.king:after {
+.royal:after {
   clear: both;
   content: '';
   display: table;
