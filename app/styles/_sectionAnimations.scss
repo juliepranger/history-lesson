@@ -1,9 +1,20 @@
 .animate-section { opacity: 0; filter: alpha(opacity=0); 
-  -webkit-transform: translateY(50px); 
-  -ms-transform: translateY(50px); 
-  transform: translateY(50px);
+  -webkit-transform: translateY(200px); 
+  -ms-transform: translateY(200px); 
+  transform: translateY(200px);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+}
+
+.line.animate-section {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out; 
+}
+
+.line.animate-section.visible {
+  height: 400px;
 }
 
 .animate-section.visible { opacity: 1; filter: alpha(opacity=100); 

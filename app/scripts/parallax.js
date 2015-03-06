@@ -26,6 +26,10 @@
         backgroundPosition: '0 ' + scrollCount + 'px'
       });
 
+      if (scrollCount > 0) {
+        $body.css({backgroundPosition: '0 0 px'});
+      }
+
       prevScrollTop = currentScrollTop;
     });
 

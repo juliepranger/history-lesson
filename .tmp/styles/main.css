@@ -7127,9 +7127,19 @@ body li a:hover {
 .animate-section {
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transform: translateY(50px);
-  transform: translateY(50px);
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
   transition: all .5s ease-in-out;
+}
+
+.line.animate-section {
+  height: 0;
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+
+.line.animate-section.visible {
+  height: 400px;
 }
 
 .animate-section.visible {
@@ -7142,7 +7152,6 @@ body li a:hover {
 }
 
 .king {
-  height: 500px;
   margin: 0 auto;
   max-width: 650px;
 }
@@ -7150,4 +7159,12 @@ body li a:hover {
   clear: both;
   content: '';
   display: table;
+}
+
+.line {
+  background-color: #444;
+  height: 400px;
+  margin: 0 auto;
+  padding: 60px 0;
+  width: 1px;
 }

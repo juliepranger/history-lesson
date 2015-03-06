@@ -1,9 +1,17 @@
 .king {
-	height: 500px;
 	margin: 0 auto;
 	max-width: 650px;
 
 	&:after {
 		@include wrap-children;
 	}
+}
+
+
+.line {
+	background-color: #444;
+	height: 400px;
+	margin: 0 auto;
+	padding: 60px 0;
+	width: 1px;
 }
