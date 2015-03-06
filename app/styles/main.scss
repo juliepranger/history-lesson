@@ -9,10 +9,22 @@ $deep-green: #0e141b;
 
 // globals
 
-body { color: white; text-align: center; font-family: moon_flowerregular; background: $deep-green url("/images/bg-stars.png") 0 0 fixed; }
+body {
+	text-align: center;
+	font-family: moon_flowerregular;
+	background: url("/images/parchment.jpg") 0 0 fixed;
+	background-repeat: no-repeat;
+}
 
-body h2 { font-size: 70px; }
-body p { font-family: exo_2thin; font-size: 20px; margin: 0 auto; max-width: 600px;}
+body h2 {
+	font-size: 70px;
+}
+body p {
+	font-family: exo_2regular;
+	font-size: 20px;
+	margin: 0 auto;
+	max-width: 600px;
+}
 
 body section {
   box-sizing: border-box;
@@ -21,16 +33,36 @@ body section {
   padding: 60px 0;
 }
 
-body li a:hover { text-decoration: none; }
-
-@media screen and (max-width: 768px) {
-  body h2 { font-size: 36px; }
-  body p { font-size: 13px; width: 90%;}
+body li a:hover {
+	text-decoration: none;
 }
 
-.browsehappy { position: absolute; top: 0; left: 0; width: 100%; max-width: none; min-height: 50px; margin: 0; padding: 10px 0; background: $deep-green; z-index: 9999; }
+@media screen and (max-width: 768px) {
+
+  body h2 {
+  	font-size: 36px;
+  }
+  body p {
+  	font-size: 13px;
+  	width: 90%;
+  }
+}
+
+.browsehappy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: none;
+	min-height: 50px;
+	margin: 0;
+	padding: 10px 0;
+	background: $deep-green;
+	z-index: 9999;
+}
 
 // app partials
 @import "mixins";
 @import "fonts";
-
+@import "sectionAnimations";
+@import "kings";
