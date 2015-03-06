@@ -1,0 +1,28 @@
+@mixin transform($rotateX, $rotateY, $rotateZ, $scale, $degreeX, $degreeY, $degreeZ) {
+  -moz-transform: rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ) scale($scale) translate3d($degreeX, $degreeY, $degreeZ);
+  -ms-transform: rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ) scale($scale) translate3d($degreeX, $degreeY, $degreeZ);
+  -o-transform: rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ) scale($scale) translate3d($degreeX, $degreeY, $degreeZ);
+  -webkit-transform: rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ) scale($scale) translate3d($degreeX, $degreeY, $degreeZ);
+  transform: rotateX($rotateX) rotateY($rotateY) rotateZ($rotateZ) scale($scale) translate3d($degreeX, $degreeY, $degreeZ);
+}
+
+@mixin wrap-children {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+@mixin filter($filter-type, $filter-amount) {
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@mixin transition($property, $time, $ease) {
+  -moz-transition: $property $time $ease;
+  -o-transition: $property $time $ease;
+  -webkit-transition: $property $time $ease;
+  transition: $property $time $ease;
+}

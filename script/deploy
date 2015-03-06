@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gulp
+rsync -avz -e 'ssh' --progress dist/ cowpoc@cowpocalypse.com:cowpocalypse.com/
