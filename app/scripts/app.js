@@ -11,7 +11,7 @@ $(document).ready(function() {
   $(".path").css("stroke-dasharray", "1000");
 
   //variable for the 'stroke-dashoffset' unit
-  var $dashOffset = $(".path").css("stroke-dashoffset");//.star
+  var $dashOffset = $(".path").css("stroke-dashoffset");
 
   //on a scroll event - execute function
   $(window).scroll(function () {    
@@ -26,7 +26,7 @@ $(document).ready(function() {
     var $offsetUnit = $percentageComplete * ($newUnit / 100);
 
     //set the new value of the dashoffset to create the drawing effect
-    $(".path").css("stroke-dashoffset", $newUnit - $offsetUnit);//.star
+    $(".path").css("stroke-dashoffset", $newUnit - $offsetUnit);
 
   });
 
