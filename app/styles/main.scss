@@ -11,17 +11,19 @@ $deep-green: #0e141b;
 
 body {
 	text-align: center;
-	font-family: moon_flowerregular;
+	font-family: Roboto;
 	background: url("/images/parchment.jpg") 0 0 fixed;
 	background-repeat: no-repeat;
 }
 
 body h2 {
 	font-size: 70px;
+	font-weight: 300;
 }
 body p {
-	font-family: exo_2regular;
+	font-family: Roboto, arial, sans-serif;
 	font-size: 20px;
+	font-weight: 400;
 	margin: 0 auto;
 	max-width: 600px;
 }
