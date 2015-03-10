@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="historyLesson">
   <head>
     <meta charset="utf-8">
     <title>History lesson</title>
@@ -12,25 +12,15 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 
   </head>
-  <body>
+  <body data-ng-controller="ScrollController">
 
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Kings Offa to Aethelred II the Unready -->
-<style>
-
-svg {
-  margin: 10px auto;
-  max-width: 640px;
-}
-
-.path {
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
-}
-</style>
+    <ul>
+      <li><a ng-click="goToElement('tudors')">Tudors</a></li>
+    </ul>
 
   <div id="anglo-saxon">
 
@@ -11846,6 +11836,11 @@ svg {
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-route.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-touch.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.js"></script>
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/modernizr/feature-detects/css-vhunit.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -11854,6 +11849,7 @@ svg {
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/scroll.js"></script>
     <script src="scripts/parallax.js"></script>
     <script src="scripts/app.js"></script>
     <!-- endbuild -->
