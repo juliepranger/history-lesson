@@ -7086,18 +7086,23 @@ body li a:hover {
     width: 90%;
   }
 }
-.citations-container {
+.footer {
+  background-color: #444;
+  height: 40px;
+  opacity: 0.8;
+  margin-top: 100px;
   position: relative;
 }
 
 .citations {
   font-family: 'Old Standard TT', serif;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
+  left: 47%;
 }
 .citations a {
-  color: #222;
+  color: #fff;
+  font-size: 13px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-decoration: none;
 }
 
@@ -7172,7 +7177,7 @@ body li a:hover {
 .royal {
   margin: 0 auto;
   max-width: 650px;
-  min-height: 300px;
+  min-height: 400px;
 }
 .royal:after {
   clear: both;
@@ -7550,6 +7555,41 @@ svg {
 
 .royal .victoria {
   background-image: url("../images/royals/hanoverians/victoria.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward7 {
+  background-image: url("../images/royals/saxe-coburg-gotha/edward7.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george5 {
+  background-image: url("../images/royals/windsor/george5.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward8 {
+  background-image: url("../images/royals/windsor/edward8.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george6 {
+  background-image: url("../images/royals/windsor/george6.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .elizabeth2 {
+  background-image: url("../images/royals/windsor/elizabeth2.jpg");
   height: 225px;
   margin: 0 auto;
   width: 140px;

@@ -1,7 +1,7 @@
 .royal {
 	margin: 0 auto;
 	max-width: 650px;
-	min-height: 300px;
+	min-height: 400px;
 
 	&:after {
 		@include wrap-children;
@@ -111,6 +111,26 @@ svg {
 
   .royal .#{$royal} {
     background-image: url('../images/royals/hanoverians/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in edward7 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/saxe-coburg-gotha/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in george5 edward8 george6 elizabeth2 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/windsor/#{$royal}.jpg');
     height: 225px;
     margin: 0 auto;
     width: 140px;
