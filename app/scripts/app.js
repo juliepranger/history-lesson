@@ -5,7 +5,7 @@
 (function($) {
 
 
-  $('body').bgParallax();
+
 
   // Section animation waypoints
   var waypoints = $('.animate-section').waypoint(function() {
