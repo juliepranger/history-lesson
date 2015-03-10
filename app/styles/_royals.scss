@@ -56,3 +56,43 @@ svg {
     width: 140px;
   }
 }
+
+@each $royal in henry3 edward1 edward2 edward3 richard2 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/plantagenets/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry4 henry5 henry6 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/lancastrians/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in edward4 edward5 richard3 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/yorkists/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry7 henry8 edward6 mary1 elizabeth1 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/tudors/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
