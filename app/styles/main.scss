@@ -49,16 +49,6 @@ body li a:hover {
   	width: 90%;
   }
 }
-svg {
-  margin: 10px auto;
-  max-width: 640px;
-}
-
-.path {
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
-}
-
 .browsehappy {
 	position: absolute;
 	top: 0;
@@ -77,3 +67,5 @@ svg {
 @import "fonts";
 @import "sectionAnimations";
 @import "royals";
+@import "nav";
+@import "header";

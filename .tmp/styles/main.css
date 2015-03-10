@@ -7085,16 +7085,6 @@ body li a:hover {
     width: 90%;
   }
 }
-svg {
-  margin: 10px auto;
-  max-width: 640px;
-}
-
-.path {
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
-}
-
 .browsehappy {
   position: absolute;
   top: 0;
@@ -7179,4 +7169,24 @@ svg {
   margin: 30px auto 0;
   padding: 60px 0;
   width: 1px;
+}
+
+svg {
+  margin: 10px auto;
+  max-width: 640px;
+}
+
+.path {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+}
+
+.section.header {
+  height: 100vh;
+  margin: 0 auto;
+  width: 100vh;
+}
+.section.header h1 {
+  font-family: 'Old Standard TT', serif;
+  margin: 40% auto;
 }
