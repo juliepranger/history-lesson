@@ -7048,6 +7048,7 @@ body {
   text-align: center;
   font-family: Roboto;
   background: url("/images/parchment.jpg") 0 0 fixed;
+  background-position: 0 0;
   background-repeat: no-repeat;
 }
 
