@@ -12,8 +12,8 @@
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
   </head>
-  <body data-ng-controller="ScrollController">
-
+  <body id="body-top" data-ng-controller="ScrollController">
+  <div class="scroll-top"><a ng-click="goToElement('body-top')">Scroll to top</a></div>
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -11849,10 +11849,6 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-animate.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-route.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-touch.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-sanitize.js"></script>
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/modernizr/feature-detects/css-vhunit.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
