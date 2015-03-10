@@ -7198,6 +7198,118 @@ svg {
   stroke-dasharray: 1000;
 }
 
+.royal .alfred {
+  background-image: url("../images/royals/anglo-saxon/alfred.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .athelstan {
+  background-image: url("../images/royals/anglo-saxon/athelstan.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .canute {
+  background-image: url("../images/royals/anglo-saxon/canute.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edgar {
+  background-image: url("../images/royals/anglo-saxon/edgar.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edmund {
+  background-image: url("../images/royals/anglo-saxon/edmund.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edmund2 {
+  background-image: url("../images/royals/anglo-saxon/edmund2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edred {
+  background-image: url("../images/royals/anglo-saxon/edred.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward-elder {
+  background-image: url("../images/royals/anglo-saxon/edward-elder.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward-martyr {
+  background-image: url("../images/royals/anglo-saxon/edward-martyr.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edwardconfessor {
+  background-image: url("../images/royals/anglo-saxon/edwardconfessor.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .egbert {
+  background-image: url("../images/royals/anglo-saxon/egbert.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .ethelred-unready {
+  background-image: url("../images/royals/anglo-saxon/ethelred-unready.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .hardicanute {
+  background-image: url("../images/royals/anglo-saxon/hardicanute.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .harold1 {
+  background-image: url("../images/royals/anglo-saxon/harold1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .harold2 {
+  background-image: url("../images/royals/anglo-saxon/harold2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .offa {
+  background-image: url("../images/royals/anglo-saxon/offa.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
 .nav-icon {
   cursor: pointer;
   position: fixed;

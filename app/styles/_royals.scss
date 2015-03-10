@@ -26,3 +26,14 @@ svg {
   stroke-dashoffset: 1000;
   stroke-dasharray: 1000;
 }
+
+@each $royal in alfred athelstan canute edgar edmund edmund2 edred edward-elder edward-martyr edwardconfessor egbert ethelred-unready hardicanute harold1 harold2 offa {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/anglo-saxon/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
