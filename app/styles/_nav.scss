@@ -1,3 +1,46 @@
-.navigation {
-	
+.nav-icon {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 1;
+}
+.navigation-container {
+	background-color: #444;
+	height: 100vh;
+	left: 0;
+	opacity: 0.8;
+	position: absolute;
+	text-align: left;
+	top: 0;
+	width: 300px;
+}
+
+.navigation-container.active {
+	width: 300px;
+}
+
+.navigation-container h4 {
+	font-family: 'Old Standard TT', serif;
+	font-size: 26px;
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+.navigation-container .navigation li {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navigation-container h4,
+.navigation-container .navigation li a {
+	color: #fff;
+}
+
+.navigation-container .navigation li a {
+	cursor: pointer;
+}
+
+.navigation-inner-container {
+	padding-top: 120px;
 }
