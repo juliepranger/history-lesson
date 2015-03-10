@@ -7086,6 +7086,12 @@ body li a:hover {
     width: 90%;
   }
 }
+.citations {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+}
+
 .browsehappy {
   position: absolute;
   top: 0;
@@ -7157,6 +7163,7 @@ body li a:hover {
 .royal {
   margin: 0 auto;
   max-width: 650px;
+  min-height: 300px;
 }
 .royal:after {
   clear: both;

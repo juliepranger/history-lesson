@@ -1,6 +1,7 @@
 .royal {
 	margin: 0 auto;
 	max-width: 650px;
+	min-height: 300px;
 
 	&:after {
 		@include wrap-children;

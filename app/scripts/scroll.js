@@ -2,19 +2,15 @@ var app = angular.module('historyLesson', []);
 
 app.controller('ScrollController', function ($scope, $location, ScrollService) {
 
-		var ctrl = this;
+	var ctrl = this;
 
     this.ctrl = $scope;
 
     this.locale = $location;
-    console.log('this.locale: ', this.locale);
 
     this.ScrollService = ScrollService;
 
 	this.ctrl.goToElement = function(elementId, opt_offset) {
-		console.log('in go to element fn');
-		console.log('el id: ', elementId);
-		console.log('this.locale: ', ctrl.locale);
 		ctrl.locale.hash(elementId);
 		ctrl.ScrollService.scrollTo(elementId, opt_offset);		
 	}
