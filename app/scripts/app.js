@@ -12,4 +12,6 @@
     $(this.element).addClass('visible');
   }, { offset: '90%' });
 
+  new navController();
+
 })(jQuery);

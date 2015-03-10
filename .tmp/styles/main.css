@@ -7086,10 +7086,19 @@ body li a:hover {
     width: 90%;
   }
 }
+.citations-container {
+  position: relative;
+}
+
 .citations {
-  position: fixed;
+  font-family: 'Old Standard TT', serif;
+  position: absolute;
   bottom: 0;
   left: 50%;
+}
+.citations a {
+  color: #222;
+  text-decoration: none;
 }
 
 .browsehappy {
@@ -7190,10 +7199,17 @@ svg {
 }
 
 .nav-icon {
-  position: absolute;
+  cursor: pointer;
+  position: fixed;
   top: 40px;
   left: 40px;
   z-index: 1;
+  transition: 250ms all ease-in-out;
+}
+
+.nav-icon:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
 }
 
 .navigation-container {
@@ -7201,13 +7217,25 @@ svg {
   height: 100vh;
   left: 0;
   opacity: 0.8;
-  position: absolute;
+  overflow: hidden;
+  position: fixed;
   text-align: left;
   top: 0;
+  width: 0;
+  transition: 500ms all ease-in-out;
+}
+
+.navigation-container.open {
   width: 300px;
 }
 
-.navigation-container.active {
+.navigation-container .navigation-inner-container {
+  padding-top: 120px;
+}
+
+.navigation-container h4,
+.navigation-container .navigation {
+  position: absolute;
   width: 300px;
 }
 
@@ -7216,6 +7244,10 @@ svg {
   font-size: 26px;
   padding-left: 40px;
   padding-top: 20px;
+}
+
+.navigation-container .navigation {
+  padding-top: 80px;
 }
 
 .navigation-container .navigation li {
@@ -7231,10 +7263,6 @@ svg {
 
 .navigation-container .navigation li a {
   cursor: pointer;
-}
-
-.navigation-inner-container {
-  padding-top: 120px;
 }
 
 .section.header {
