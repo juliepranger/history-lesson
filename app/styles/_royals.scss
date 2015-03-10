@@ -37,3 +37,22 @@ svg {
   }
 }
 
+@each $royal in henry1 stephen william1 william2 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/normans/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry2 richard1 john {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/angevins/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}

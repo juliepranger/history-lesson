@@ -7310,6 +7310,55 @@ svg {
   width: 140px;
 }
 
+.royal .henry1 {
+  background-image: url("../images/royals/normans/henry1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .stephen {
+  background-image: url("../images/royals/normans/stephen.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william1 {
+  background-image: url("../images/royals/normans/william1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william2 {
+  background-image: url("../images/royals/normans/william2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry2 {
+  background-image: url("../images/royals/angevins/henry2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .richard1 {
+  background-image: url("../images/royals/angevins/richard1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .john {
+  background-image: url("../images/royals/angevins/john.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
 .nav-icon {
   cursor: pointer;
   position: fixed;
