@@ -96,3 +96,23 @@ svg {
     width: 140px;
   }
 }
+
+@each $royal in james1 charles1 charles2 james2 william3 anne {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/stuarts/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in george1 george2 george3 george4 william4 victoria {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/hanoverians/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}

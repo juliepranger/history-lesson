@@ -7471,6 +7471,90 @@ svg {
   width: 140px;
 }
 
+.royal .james1 {
+  background-image: url("../images/royals/stuarts/james1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .charles1 {
+  background-image: url("../images/royals/stuarts/charles1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .charles2 {
+  background-image: url("../images/royals/stuarts/charles2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .james2 {
+  background-image: url("../images/royals/stuarts/james2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william3 {
+  background-image: url("../images/royals/stuarts/william3.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .anne {
+  background-image: url("../images/royals/stuarts/anne.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george1 {
+  background-image: url("../images/royals/hanoverians/george1.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george2 {
+  background-image: url("../images/royals/hanoverians/george2.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george3 {
+  background-image: url("../images/royals/hanoverians/george3.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george4 {
+  background-image: url("../images/royals/hanoverians/george4.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william4 {
+  background-image: url("../images/royals/hanoverians/william4.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .victoria {
+  background-image: url("../images/royals/hanoverians/victoria.jpg");
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
 .nav-icon {
   cursor: pointer;
   position: fixed;
