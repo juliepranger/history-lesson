@@ -4,11 +4,11 @@ app.controller('ScrollController', function ($scope, $location, ScrollService) {
 
 	var ctrl = this;
 
-    this.ctrl = $scope;
+  this.ctrl = $scope;
 
-    this.locale = $location;
+  this.locale = $location;
 
-    this.ScrollService = ScrollService;
+  this.ScrollService = ScrollService;
 
 	this.ctrl.goToElement = function(elementId, opt_offset) {
 		ctrl.locale.hash(elementId);

@@ -10,9 +10,10 @@ $deep-green: #0e141b;
 // globals
 
 body {
+	color: #fff;
 	text-align: center;
 	font-family: Roboto;
-	background: url("/images/parchment.jpg") 0 0 fixed;
+	background-color: #7F8085;
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
@@ -21,9 +22,16 @@ body h2 {
 	font-size: 70px;
 	font-weight: 300;
 }
+
+body h4 {
+	font-size: 32px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
 body p {
 	font-family: Roboto, arial, sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	margin: 0 auto;
 	max-width: 600px;

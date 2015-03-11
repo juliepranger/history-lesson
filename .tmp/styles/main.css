@@ -7045,9 +7045,10 @@ button.close {
   }
 }
 body {
+  color: #fff;
   text-align: center;
   font-family: Roboto;
-  background: url("/images/parchment.jpg") 0 0 fixed;
+  background-color: #7F8085;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -7057,9 +7058,15 @@ body h2 {
   font-weight: 300;
 }
 
+body h4 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
 body p {
   font-family: Roboto, arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0 auto;
   max-width: 600px;
@@ -7186,7 +7193,7 @@ body li a:hover {
 }
 
 .line {
-  background-color: #444;
+  background-color: #f7f7f7;
   height: 300px;
   margin: 30px auto 0;
   padding: 60px 0;
@@ -7203,8 +7210,46 @@ svg {
   stroke-dasharray: 1000;
 }
 
+.information-container {
+  background-color: #F6f6f6;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.information-container ul {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.information-container ul li {
+  color: #7F8085;
+  text-align: left;
+  list-style-type: none;
+}
+
+.information-container.open {
+  opacity: 1;
+}
+
+.read-more {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.read-more .glyphicon.glyphicon-chevron-down {
+  margin-left: 10px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: all 0.25s ease-in-out;
+}
+
+.read-more .glyphicon.glyphicon-chevron-down.flip {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .royal .alfred {
   background-image: url("../images/royals/anglo-saxon/alfred.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7212,6 +7257,7 @@ svg {
 
 .royal .athelstan {
   background-image: url("../images/royals/anglo-saxon/athelstan.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7219,6 +7265,7 @@ svg {
 
 .royal .canute {
   background-image: url("../images/royals/anglo-saxon/canute.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7226,6 +7273,7 @@ svg {
 
 .royal .edgar {
   background-image: url("../images/royals/anglo-saxon/edgar.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7233,6 +7281,7 @@ svg {
 
 .royal .edmund {
   background-image: url("../images/royals/anglo-saxon/edmund.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7240,6 +7289,7 @@ svg {
 
 .royal .edmund2 {
   background-image: url("../images/royals/anglo-saxon/edmund2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7247,6 +7297,7 @@ svg {
 
 .royal .edred {
   background-image: url("../images/royals/anglo-saxon/edred.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7254,6 +7305,7 @@ svg {
 
 .royal .edward-elder {
   background-image: url("../images/royals/anglo-saxon/edward-elder.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7261,6 +7313,7 @@ svg {
 
 .royal .edward-martyr {
   background-image: url("../images/royals/anglo-saxon/edward-martyr.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7268,6 +7321,7 @@ svg {
 
 .royal .edwardconfessor {
   background-image: url("../images/royals/anglo-saxon/edwardconfessor.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7275,6 +7329,7 @@ svg {
 
 .royal .egbert {
   background-image: url("../images/royals/anglo-saxon/egbert.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7282,6 +7337,7 @@ svg {
 
 .royal .ethelred-unready {
   background-image: url("../images/royals/anglo-saxon/ethelred-unready.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7289,6 +7345,7 @@ svg {
 
 .royal .hardicanute {
   background-image: url("../images/royals/anglo-saxon/hardicanute.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7296,6 +7353,7 @@ svg {
 
 .royal .harold1 {
   background-image: url("../images/royals/anglo-saxon/harold1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7303,6 +7361,7 @@ svg {
 
 .royal .harold2 {
   background-image: url("../images/royals/anglo-saxon/harold2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7310,6 +7369,7 @@ svg {
 
 .royal .offa {
   background-image: url("../images/royals/anglo-saxon/offa.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7317,6 +7377,7 @@ svg {
 
 .royal .henry1 {
   background-image: url("../images/royals/normans/henry1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7324,6 +7385,7 @@ svg {
 
 .royal .stephen {
   background-image: url("../images/royals/normans/stephen.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7331,6 +7393,7 @@ svg {
 
 .royal .william1 {
   background-image: url("../images/royals/normans/william1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7338,6 +7401,7 @@ svg {
 
 .royal .william2 {
   background-image: url("../images/royals/normans/william2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7345,6 +7409,7 @@ svg {
 
 .royal .henry2 {
   background-image: url("../images/royals/angevins/henry2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7352,6 +7417,7 @@ svg {
 
 .royal .richard1 {
   background-image: url("../images/royals/angevins/richard1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7359,6 +7425,7 @@ svg {
 
 .royal .john {
   background-image: url("../images/royals/angevins/john.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7366,6 +7433,7 @@ svg {
 
 .royal .henry3 {
   background-image: url("../images/royals/plantagenets/henry3.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7373,6 +7441,7 @@ svg {
 
 .royal .edward1 {
   background-image: url("../images/royals/plantagenets/edward1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7380,6 +7449,7 @@ svg {
 
 .royal .edward2 {
   background-image: url("../images/royals/plantagenets/edward2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7387,6 +7457,7 @@ svg {
 
 .royal .edward3 {
   background-image: url("../images/royals/plantagenets/edward3.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7394,6 +7465,7 @@ svg {
 
 .royal .richard2 {
   background-image: url("../images/royals/plantagenets/richard2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7401,6 +7473,7 @@ svg {
 
 .royal .henry4 {
   background-image: url("../images/royals/lancastrians/henry4.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7408,6 +7481,7 @@ svg {
 
 .royal .henry5 {
   background-image: url("../images/royals/lancastrians/henry5.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7415,6 +7489,7 @@ svg {
 
 .royal .henry6 {
   background-image: url("../images/royals/lancastrians/henry6.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7422,6 +7497,7 @@ svg {
 
 .royal .edward4 {
   background-image: url("../images/royals/yorkists/edward4.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7429,6 +7505,7 @@ svg {
 
 .royal .edward5 {
   background-image: url("../images/royals/yorkists/edward5.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7436,6 +7513,7 @@ svg {
 
 .royal .richard3 {
   background-image: url("../images/royals/yorkists/richard3.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7443,6 +7521,7 @@ svg {
 
 .royal .henry7 {
   background-image: url("../images/royals/tudors/henry7.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7450,6 +7529,7 @@ svg {
 
 .royal .henry8 {
   background-image: url("../images/royals/tudors/henry8.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7457,6 +7537,7 @@ svg {
 
 .royal .edward6 {
   background-image: url("../images/royals/tudors/edward6.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7464,6 +7545,7 @@ svg {
 
 .royal .mary1 {
   background-image: url("../images/royals/tudors/mary1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7471,6 +7553,7 @@ svg {
 
 .royal .elizabeth1 {
   background-image: url("../images/royals/tudors/elizabeth1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7478,6 +7561,7 @@ svg {
 
 .royal .james1 {
   background-image: url("../images/royals/stuarts/james1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7485,6 +7569,7 @@ svg {
 
 .royal .charles1 {
   background-image: url("../images/royals/stuarts/charles1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7492,6 +7577,7 @@ svg {
 
 .royal .charles2 {
   background-image: url("../images/royals/stuarts/charles2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7499,6 +7585,7 @@ svg {
 
 .royal .james2 {
   background-image: url("../images/royals/stuarts/james2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7506,6 +7593,7 @@ svg {
 
 .royal .william3 {
   background-image: url("../images/royals/stuarts/william3.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7513,6 +7601,7 @@ svg {
 
 .royal .anne {
   background-image: url("../images/royals/stuarts/anne.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7520,6 +7609,7 @@ svg {
 
 .royal .george1 {
   background-image: url("../images/royals/hanoverians/george1.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7527,6 +7617,7 @@ svg {
 
 .royal .george2 {
   background-image: url("../images/royals/hanoverians/george2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7534,6 +7625,7 @@ svg {
 
 .royal .george3 {
   background-image: url("../images/royals/hanoverians/george3.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7541,6 +7633,7 @@ svg {
 
 .royal .george4 {
   background-image: url("../images/royals/hanoverians/george4.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7548,6 +7641,7 @@ svg {
 
 .royal .william4 {
   background-image: url("../images/royals/hanoverians/william4.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7555,6 +7649,7 @@ svg {
 
 .royal .victoria {
   background-image: url("../images/royals/hanoverians/victoria.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7562,6 +7657,7 @@ svg {
 
 .royal .edward7 {
   background-image: url("../images/royals/saxe-coburg-gotha/edward7.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7569,6 +7665,7 @@ svg {
 
 .royal .george5 {
   background-image: url("../images/royals/windsor/george5.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7576,6 +7673,7 @@ svg {
 
 .royal .edward8 {
   background-image: url("../images/royals/windsor/edward8.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7583,6 +7681,7 @@ svg {
 
 .royal .george6 {
   background-image: url("../images/royals/windsor/george6.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;
@@ -7590,6 +7689,7 @@ svg {
 
 .royal .elizabeth2 {
   background-image: url("../images/royals/windsor/elizabeth2.jpg");
+  background-repeat: no-repeat;
   height: 225px;
   margin: 0 auto;
   width: 140px;

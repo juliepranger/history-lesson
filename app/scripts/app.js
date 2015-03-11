@@ -13,5 +13,6 @@
   }, { offset: '90%' });
 
   new navController();
+  new readMoreController();
 
 })(jQuery);
