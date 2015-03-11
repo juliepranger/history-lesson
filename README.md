@@ -1,7 +1,9 @@
 
 # History lesson - a fun guide
 
-A single page site for the history lesson site. App structure is based on the [gulp-webapp](https://github.com/yeoman/generator-gulp-webapp "Gulp Webapp") Yeoman generator. 
+A brief history of the English succession.
+
+App structure is based on the [gulp-webapp](https://github.com/yeoman/generator-gulp-webapp "Gulp Webapp") Yeoman generator. 
 
 ## Quick Start
 
