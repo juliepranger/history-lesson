@@ -1,9 +1,0 @@
-.king {
-	height: 500px;
-	margin: 0 auto;
-	max-width: 650px;
-
-	&:after {
-		@include wrap-children;
-	}
-}

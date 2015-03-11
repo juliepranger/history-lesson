@@ -1,0 +1,138 @@
+.royal {
+	margin: 0 auto;
+	max-width: 650px;
+	min-height: 400px;
+
+	&:after {
+		@include wrap-children;
+	}
+}
+
+
+.line {
+	background-color: #444;
+	height: 300px;
+	margin: 30px auto 0;
+	padding: 60px 0;
+	width: 1px;
+}
+
+svg {
+  margin: 10px auto;
+  max-width: 640px;
+}
+
+.path {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+}
+
+@each $royal in alfred athelstan canute edgar edmund edmund2 edred edward-elder edward-martyr edwardconfessor egbert ethelred-unready hardicanute harold1 harold2 offa {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/anglo-saxon/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry1 stephen william1 william2 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/normans/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry2 richard1 john {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/angevins/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry3 edward1 edward2 edward3 richard2 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/plantagenets/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry4 henry5 henry6 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/lancastrians/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in edward4 edward5 richard3 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/yorkists/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in henry7 henry8 edward6 mary1 elizabeth1 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/tudors/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in james1 charles1 charles2 james2 william3 anne {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/stuarts/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in george1 george2 george3 george4 william4 victoria {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/hanoverians/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in edward7 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/saxe-coburg-gotha/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}
+
+@each $royal in george5 edward8 george6 elizabeth2 {
+
+  .royal .#{$royal} {
+    background-image: url('../images/royals/windsor/#{$royal}.jpg');
+    height: 225px;
+    margin: 0 auto;
+    width: 140px;
+  }
+}

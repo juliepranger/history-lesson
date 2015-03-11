@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="historyLesson">
   <head>
     <meta charset="utf-8">
     <title>History lesson</title>
@@ -10,90 +10,829 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-
+  <body id="body-top" data-ng-controller="ScrollController">
+  <div class="scroll-top"><a ng-click="goToElement('body-top')">Scroll to top</a></div>
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+    <defs>
+      <g id="Group">
+        <path class="path" stroke="#E8C81A" stroke-width="3" fill="#E8C81A" d="M50 90 V 10 L 70 20 L 90 0 L 110 20 L 130 10 V 90 H 50">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" />
+        </path>
 
-    <!-- Kings Offa to Aethelred II the Unready -->
+        <ellipse id="one" stroke="blue" fill="blue" cx="65" cy="50" rx="3" ry="5">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" />          
+        </ellipse>
+        <ellipse id="two" stroke="red" fill="red" cx="90" cy="50" rx="7" ry="10">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" />          
+        </ellipse>
+        <ellipse id="three" stroke="blue" fill="blue" cx="115" cy="50" rx="3" ry="5">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" />          
+        </ellipse>
 
-  <div class="anglo-saxon">
+        <circle class="white" stroke="white" fill="white" cx="50" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="55" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="60" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="65" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="70" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="75" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="80" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="85" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="90" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="95" cy="88" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="100" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="105" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="110" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="115" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="120" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="125" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="130" cy="88" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
 
-    <div class="king animate-section">
-      <h2>King Offa (757 - 769)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Egbert (802 - 839)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Aethelwulf (839-856)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Aethelbald (856 - 860)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Aethelred I (866 - 871)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Alfred the Great (871 - 899)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edward the Elder (899 - 924)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Athelstan (924 - 940)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edmund (940 - 946)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edred (946 - 955)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edwy (Eadwig) (955 - 959)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edgar (959 - 975)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edward The Martyr (975 - 978)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Athelred II The Unready (978 - 1016)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>Sweyn (1013 - 1014)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edmund II Ironside (Apr - Nov 1016)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Cnut (Canute) 'The Great' (1016 - 1035)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Harold I Harefoot (1035 - 1040)  </h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Hardicanute (1035 - 1042)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edward III 'The Confessor' (1042 - 1066)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Harold II (Jan - Oct 1066)</h2>
-    </div>
-    <div class="king animate-section">
-      <h2>King Edgar Atheling (Oct - Dec 1066)</h2>
-    </div>
-
+        <circle class="white" stroke="white" fill="white" cx="50" cy="10" r="2">
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="90" cy="0" r="2"> 
+          <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+        <circle class="white" stroke="white" fill="white" cx="130" cy="10" r="2">
+           <animate
+            attributeName="opacity"
+            values="0.3;1;0.3" 
+            dur="2.5s"
+            begin="0s"
+            repeatCount="indefinite" /></circle>
+      </g>        
+    </defs>
+  </svg>
+  <img class="nav-icon" src="images/menu-icon.png"/>
+  <div class="navigation-container">
+    <div class="navigation-inner-container">
+      <h4>Jump to:</h4>
+      <ul class="navigation">
+        <li><a ng-click="goToElement('anglo-saxon')">Anglo-Saxon</a></li>
+        <li><a ng-click="goToElement('normans')">Normans</a></li>
+        <li><a ng-click="goToElement('angevins')">Angevins</a></li>
+        <li><a ng-click="goToElement('plantagenets')">Plantagenets</a></li>
+        <li><a ng-click="goToElement('lancastrians')">Lancastrians</a></li>
+        <li><a ng-click="goToElement('yorkists')">Yorkists</a></li>
+        <li><a ng-click="goToElement('stuarts')">Stuarts</a></li>
+        <li><a ng-click="goToElement('hanoverians')">Hanoverians</a></li>
+        <li><a ng-click="goToElement('saxe-coburg-gotha')">Saxe-Coburg-Gotha</a></li>
+        <li><a ng-click="goToElement('windsor')">The House of Windsor</a></li>
+      </ul>
+    </div>      
   </div>
 
 
+  <div class="section header">
+    <h1>A brief history of English succession.</h1>
+  </div>
+
+  <div id="anglo-saxon">
+
+    <div class="royal animate-section">
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+         <use xlink:href="#Group" />
+      </svg>
+      <div class="offa"></div>
+      <h2>King Offa</h2>
+      <p>(757 - 769)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="egbert"></div>
+      <h2>King Egbert</h2>
+      <p>(802 - 839)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>King Aethelwulf</h2>
+      <p>(839 - 856)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>King Aethelbald</h2>
+      <p>(856 - 860)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>King Aethelred I</h2>
+      <p>(866 - 871)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="alfred"></div>
+      <h2>King Alfred the Great</h2>
+      <p>(871 - 899)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward-elder"></div>
+      <h2>King Edward the Elder</h2>
+      <p>(899 - 924)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="athelstan"></div>
+      <h2>King Athelstan</h2>
+      <p>(924 - 940)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edmund"></div>
+      <h2>King Edmund</h2>
+      <p>(940 - 946)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edred"></div>
+      <h2>King Edred</h2>
+      <p>(946 - 955)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>King Edwy (Eadwig)</h2>
+      <p>(955 - 959)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>King Edgar</h2>
+      <p>(959 - 975)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward-martyr"></div>
+      <h2>King Edward The Martyr</h2>
+      <p>(975 - 978)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="ethelred-unready"></div>
+      <h2>King Athelred II 'The Unready'</h2>
+      <p>(978 - 1016)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>Sweyn</h2>
+      <p>(1013 - 1014)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edmund2"></div>
+      <h2>King Edmund II 'Ironside'</h2>
+      <p>(Apr - Nov 1016)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="canute"></div>
+      <h2>King Cnut (Canute) 'The Great'</h2>
+      <p>(1016 - 1035)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="harold1"></div>
+      <h2>King Harold I Harefoot</h2>
+      <p>(1035 - 1040)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="hardicanute"></div>
+      <h2>King Hardicanute</h2>
+      <p>(1035 - 1042)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edwardconfessor"></div>
+      <h2>King Edward III 'The Confessor'</h2>
+      <p>(1042 - 1066)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="harold2"></div>
+      <h2>King Harold II</h2>
+      <p>(Jan - Oct 1066)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edgar"></div>
+      <h2>King Edgar Atheling</h2>
+      <p>(Oct - Dec 1066)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="normans">
+    <div class="royal animate-section">
+      <div class="william1"></div>
+      <h2>King William I 'The Conqueror'</h2>
+      <p>(1066 - 1087)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="william2"></div>
+      <h2>King William II 'William Rufus'</h2>
+      <p>(1087 - 1100)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="henry1"></div>
+      <h2>King Henry I 'Beaucleric'</h2>
+      <p>(1100 - 1135)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="stephen"></div>
+      <h2>King Stephen and Queen Matilda</h2>
+      <p>(1135 - 1154)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="angevins">
+    <div class="royal animate-section">
+      <div class="henry2"></div>
+      <h2>King Henry II 'Curtmantle'</h2>
+      <p>(1154 - 1189)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="richard1"></div>
+      <h2>King Richard I 'Lionheart'</h2>
+      <p>(1189 - 1199)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="john"></div>
+      <h2>King John 'Lackland'</h2>
+      <p>(1199 - 1216)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="plantagenets">
+    <div class="royal animate-section">
+      <div class="henry3"></div>
+      <h2>King Henry III</h2>
+      <p>(1216 - 1272)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward1"></div>
+      <h2>King Edward I 'Longshanks'</h2>
+      <p>(1272 - 1307)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward2"></div>
+      <h2>King Edward II</h2>
+      <p>(1307 - 1327)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward3"></div>
+      <h2>King Edward III</h2>
+      <p>(1327 - 1377)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="richard2"></div>
+      <h2>King Richard II</h2>
+      <p>(1377 - 1399)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="lancastrians">
+    <div class="royal animate-section">
+      <div class="henry4"></div>
+      <h2>King Henry IV</h2>
+      <p>(1399 - 1413)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+    <div class="henry5"></div>
+      <h2>King Henry V</h2>
+      <p>(1413 - 1422)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="henry6"></div>
+      <h2>King Henry VI</h2>
+      <p>(1422 - 1461, 1470 - 1471)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="yorkists">
+    <div class="royal animate-section">
+      <div class="edward4"></div>
+      <h2>King Edward IV</h2>
+      <p> (1461 - 1470, 1471 - 1483)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward5"></div>
+      <h2>King Edward V</h2>
+      <p>(Apr - June 1483)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+     <div class="richard3"></div>
+      <h2>King Richard III</h2>
+      <p>(1483 - 1485)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>    
+  </div>
+
+  <div id="tudors">
+    <div class="royal animate-section">
+      <div class="henry7"></div>
+      <h2>King Henry VII</h2>
+      <p>(1485 - 1509)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="henry8"></div>
+      <h2>King Henry VIII</h2>
+      <p>(1509 - 1547)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="edward6"></div>
+      <h2>King Edward VI</h2>
+      <p>(1547 - 1553)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>Queen Jane Grey</h2>
+      <p>(July 10-19, 1553)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="mary1"></div>
+      <h2>Queen Mary I</h2>
+      <p>(1553 - 1558)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="elizabeth1"></div>
+      <h2>Queen Elizabeth I</h2>
+      <p>(1558 - 1603)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>      
+  </div>
+
+  <div id="stuarts">
+    <div class="royal animate-section">
+      <div class="james1"></div>
+      <h2>King James I</h2>
+      <p>(1603 - 1625)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="charles1"></div>
+      <h2>King Charles I</h2>
+      <p>(1625 - 1649)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <h2>Interregnum</h2>
+      <p>(1649 - 1660)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="charles2"></div>
+      <h2>King Charles II</h2>
+      <p>(1660 - 1685)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="james2"></div>
+      <h2>King James II</h2>
+      <p>(1685 - 1688)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="william3"></div>
+      <h2>Queen Mary II & King William III</h2>
+      <p> (1684 - 1702)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>  
+    <div class="royal animate-section">
+      <div class="anne"></div>
+      <h2>Queen Anne</h2>
+      <p>(1702 - 1714)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="hanoverians">
+    <div class="royal animate-section">
+      <div class="george1"></div>
+      <h2>King George I</h2>
+      <p>(1714 - 1727)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="george2"></div>
+      <h2>King George II</h2>
+      <p>(1727 - 1760)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="george3"></div>
+      <h2>King George III</h2>
+      <p>(1760 - 1820)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="george4"></div>
+      <h2>King George IV</h2>
+      <p>(1820 - 1830)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="william4"></div>
+      <h2>King William IV</h2>
+      <p>(1830 - 1837)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="victoria"></div>
+      <h2>Queen Victoria</h2>
+      <p>(1837 - 1901)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+  </div>
+
+  <div id="saxe-coburg-gotha">
+    <div class="royal animate-section">
+      <div class="edward7"></div>
+      <h2>King Edward VII</h2>
+      <p>(1901 - 1910)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>    
+  </div>
+
+  <div id="windsor">
+    <div class="royal animate-section">
+      <div class="george5"></div>
+      <h2>King George V</h2>
+      <p>(1910 - 1936)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>   
+    <div class="royal animate-section">
+      <div class="edward8"></div>
+      <h2>King Edward VIII</h2>
+      <p>(Jan - Dec 1936)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="george6"></div>
+      <h2>King George VI</h2>
+      <p>(1936 - 1952)</p>
+      <div class="line"></div>
+      <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+        <use xlink:href="#Group" />
+      </svg>
+    </div>
+    <div class="royal animate-section">
+      <div class="elizabeth2"></div>
+      <h2>Queen Elizabeth II</h2>
+      <p>(1952 - )</p>
+    </div>        
+  </div>
+
+  <div class="footer">
+    <div class="citations-container">
+      <p class="citations"><a href="/bibliography/index.html">Citations</a></p>
+    </div>    
+  </div>
+  
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.js"></script>
     <script src="../bower_components/modernizr/modernizr.js"></script>
     <script src="../bower_components/modernizr/feature-detects/css-vhunit.js"></script>
     <script src="../bower_components/jquery/dist/jquery.js"></script>
@@ -102,9 +841,12 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/scroll.js"></script>
     <script src="scripts/parallax.js"></script>
     <script src="scripts/app.js"></script>
     <!-- endbuild -->
+
     
 </body>
 </html>
