@@ -7244,8 +7244,7 @@ svg {
   transition: all 0.5s ease-in-out;
 }
 .information-container ul {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
 }
 .information-container ul li {
   color: #7F8085;
