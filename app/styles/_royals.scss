@@ -57,12 +57,43 @@ svg {
 	margin-left: 10px;
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
-	@include transition(all, .25s, ease-in-out);
+	@include transition(all, .5s, ease-in-out);
 }
 
 .read-more .glyphicon.glyphicon-chevron-down.flip {
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
+    -webkit-animation: arrowFlip 1s ease-in-out; /* Chrome, Safari, Opera */
+    animation: arrowFlip 1s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+  	animation-fill-mode: forwards;
+	-webkit-animation-delay: .25s !important; /* Chrome, Safari, Opera */
+	animation-delay: .25s !important;  
+}
+
+@keyframes arrowFlip {
+    0% {
+      transform: rotate(180deg);
+    }
+
+    50% {
+      transform: rotate(180deg) translateY(-33px);  
+    }
+
+    100% {
+      transform: rotate(180deg) translateX(50px) translateY(-33px);
+    }
+}
+@-webkit-keyframes arrowFlip {
+    0% {
+      -webkit-transform: rotate(180deg); 
+    }
+
+    50% {
+    	-webkit-transform: rotate(180deg) translateY(-33px);   
+    }
+
+    100% {
+       -webkit-transform: rotate(180deg) translateX(50px) translateY(-33px);
+    }
 }
 
 
