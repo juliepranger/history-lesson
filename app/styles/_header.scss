@@ -12,7 +12,7 @@
 
 .cssanimations .section.header h1 {
   opacity: 0;
-  margin: 25% auto;
+  margin: 0 auto;
   -webkit-animation: fadeIn 2s ease-in-out; /* Chrome, Safari, Opera */
   animation: fadeIn 2s ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -30,7 +30,7 @@
     }
     100% {
       opacity: 1;
-      transform: translateY(100px);
+      transform: translateY(80px);
     }
 }
 @-webkit-keyframes fadeIn {
@@ -42,6 +42,6 @@
     }
     100% {
       opacity: 1;
-    	-webkit-transform: translateY(100px);
+    	-webkit-transform: translateY(80px);
     }
 }

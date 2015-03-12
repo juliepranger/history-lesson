@@ -195,7 +195,97 @@
             dur="2.5s"
             begin="0s"
             repeatCount="indefinite" /></circle>
-      </g>        
+      </g> 
+    
+    </defs>
+  </svg>
+  <svg width="100px" height="100px" viewBox="-2 -2 175 100" version="1.1">
+    <defs>
+      <g id="england">
+        <rect style="fill: #fff;" height="67" width="100" x="0" y="50" opacity="0">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 50"
+            to="0 450" 
+            begin="1s"
+            dur="3s"
+            calcMode="spline"
+            values="0 50; 0 400; 0 180; 0 400; 0 250; 0 400; 0 360; 0 400"
+            keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+            keySplines="0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1"
+            fill="freeze"/>
+          <animate
+            attributeName="opacity"
+            from="0"
+            to="1" 
+            dur="3s"
+            begin="1s"
+            fill="freeze" /> 
+        </rect>
+        <rect style="fill: red;" height="67" width="13" x="43" y="50" opacity="0">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 50"
+            to="0 450" 
+            begin="1s"
+            dur="3s"
+            calcMode="spline"
+            values="0 50; 0 400; 0 180; 0 400; 0 250; 0 400; 0 360; 0 400"
+            keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+            keySplines="0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1"
+            fill="freeze"/>
+          <animate
+            attributeName="opacity"
+            from="0"
+            to="1" 
+            dur="3s"
+            begin="1s"
+            fill="freeze" />  
+        </rect>
+        <rect style="fill: red;" height="13" width="100" x="0" y="78" opacity="0">
+          <animateTransform
+            attributeName="transform"
+            type="translate"
+            from="0 50"
+            to="0 450" 
+            begin="1s"
+            dur="3s"
+            calcMode="spline"
+            values="0 50; 0 400; 0 180; 0 400; 0 250; 0 400; 0 360; 0 400"
+            keyTimes="0; 0.15; 0.3; 0.45; 0.6; 0.75; 0.9; 1"
+            keySplines="0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1;
+                         0 0 0.59 1;
+                         0.42 0 1 1"
+            fill="freeze"/>
+          <animate
+            attributeName="opacity"
+            from="0"
+            to="1" 
+            dur="3s"
+            begin="1s"
+            fill="freeze" />
+        </rect>
+  
+      </g>  
+      
     </defs>
   </svg>
   <img class="nav-icon" src="images/menu-icon.png"/>
@@ -219,6 +309,9 @@
 
 
   <div class="section header">
+    <svg width="100px" height="525px" version="1.1">
+      <use xlink:href="#england" />
+    </svg>
     <h1>A brief history of English succession.</h1>
   </div>
 
