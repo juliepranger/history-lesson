@@ -636,7 +636,7 @@ svg {
   position: fixed;
   top: 40px;
   left: 40px;
-  z-index: 1;
+  z-index: 11;
   transition: 400ms all ease-in-out;
 }
 
@@ -660,6 +660,7 @@ svg {
 
 .navigation-container.open {
   width: 300px;
+  z-index: 11;
 }
 
 .navigation-container .navigation-inner-container {
@@ -7927,15 +7928,6 @@ body li a:hover {
   z-index: 0;
 }
 
-.house-image.angevin {
-  background-image: url("../images/coat-of-arms/angevin.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
-}
-
 .house-image.anglo-saxon {
   background-image: url("../images/coat-of-arms/anglo-saxon.png");
   background-repeat: no-repeat;
@@ -7943,24 +7935,10 @@ body li a:hover {
   height: 58%;
   position: absolute;
   width: 25%;
-}
-
-.house-image.hanoverian {
-  background-image: url("../images/coat-of-arms/hanoverian.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
-}
-
-.house-image.lancastrian {
-  background-image: url("../images/coat-of-arms/lancastrian.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
 }
 
 .house-image.norman {
@@ -7970,6 +7948,23 @@ body li a:hover {
   height: 58%;
   position: absolute;
   width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.angevin {
+  background-image: url("../images/coat-of-arms/angevin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
 }
 
 .house-image.plantagenet {
@@ -7979,51 +7974,23 @@ body li a:hover {
   height: 58%;
   position: absolute;
   width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
 }
 
-.house-image.protectorate-stuart {
-  background-image: url("../images/coat-of-arms/protectorate-stuart.png");
+.house-image.lancastrian {
+  background-image: url("../images/coat-of-arms/lancastrian.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 58%;
   position: absolute;
   width: 25%;
-}
-
-.house-image.saxe-coburg-gotha {
-  background-image: url("../images/coat-of-arms/saxe-coburg-gotha.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
-}
-
-.house-image.stuart {
-  background-image: url("../images/coat-of-arms/stuart.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
-}
-
-.house-image.tudor1 {
-  background-image: url("../images/coat-of-arms/tudor1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
-}
-
-.house-image.windsor {
-  background-image: url("../images/coat-of-arms/windsor.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 58%;
-  position: absolute;
-  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
 }
 
 .house-image.yorkist1 {
@@ -8033,15 +8000,131 @@ body li a:hover {
   height: 58%;
   position: absolute;
   width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.tudor1 {
+  background-image: url("../images/coat-of-arms/tudor1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.stuart {
+  background-image: url("../images/coat-of-arms/stuart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.protectorate-stuart {
+  background-image: url("../images/coat-of-arms/protectorate-stuart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.hanoverian {
+  background-image: url("../images/coat-of-arms/hanoverian.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.saxe-coburg-gotha {
+  background-image: url("../images/coat-of-arms/saxe-coburg-gotha.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
+.house-image.windsor {
+  background-image: url("../images/coat-of-arms/windsor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
 }
 
 .house-image.anglo-saxon {
   width: 493px;
   height: 334px;
-  float: right;
-  right: 5%;
-  top: 39%;
-  z-index: 10;
+}
+
+.house-image.norman {
+  height: 330px;
+  width: 300px;
+}
+
+.house-image.angevin,
+.house-image.plantagenet,
+.house-image.lancastrian,
+.house-image.yorkist1 {
+  height: 359px;
+  width: 308px;
+  top: 33%;
+}
+
+.house-image.tudor1,
+.house-image.stuart,
+.house-image.hanoverian,
+.house-image.saxe-coburg-gotha {
+  height: 426px;
+  width: 426px;
+}
+
+.house-image.windsor {
+  width: 280px;
+  height: 355px;
+  top: 25%;
+}
+
+.house-image.tudor1 {
+  top: 19%;
+}
+
+.house-image.stuart,
+.house-image.hanoverian,
+.house-image.saxe-coburg-gotha {
+  top: 18%;
 }
 
 .footer {

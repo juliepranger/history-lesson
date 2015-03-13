@@ -109,7 +109,7 @@ body li a:hover {
 	z-index: 0;
 }
 
-@each $house in angevin anglo-saxon hanoverian lancastrian norman plantagenet protectorate-stuart saxe-coburg-gotha stuart tudor1 windsor yorkist1 {
+@each $house in anglo-saxon norman angevin plantagenet lancastrian yorkist1 tudor1 stuart protectorate-stuart hanoverian saxe-coburg-gotha windsor {
 
   .house-image.#{$house} {
     background-image: url('../images/coat-of-arms/#{$house}.png');
@@ -118,18 +118,52 @@ body li a:hover {
     height: 58%;
     position: absolute;
     width: 25%;
+	float: right;
+	right: 5%;
+	top: 39%;
+	z-index: 10;
   }
 }
 
 .house-image.anglo-saxon {
 	width: 493px;
 	height: 334px;
-	float: right;
-	right: 5%;
-	top: 39%;
-	z-index: 10;
 }
 
+.house-image.norman {
+	height: 330px;
+	width: 300px;
+}
+
+.house-image.angevin,
+.house-image.plantagenet,
+.house-image.lancastrian,
+.house-image.yorkist1 {
+	height: 359px;
+	width: 308px;
+	top: 33%;
+}
+
+.house-image.tudor1,
+.house-image.stuart,
+.house-image.hanoverian,
+.house-image.saxe-coburg-gotha {
+	height: 426px;
+	width: 426px;
+}
+.house-image.windsor {
+	width: 280px;
+	height: 355px;
+	top: 25%;
+}
+.house-image.tudor1 {
+	top: 19%;
+}
+.house-image.stuart,
+.house-image.hanoverian,
+.house-image.saxe-coburg-gotha {
+	top: 18%;
+}
 
 .footer{
 	background-color: #444;

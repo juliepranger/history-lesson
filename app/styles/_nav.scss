@@ -3,7 +3,7 @@
 	position: fixed;
 	top: 40px;
 	left: 40px;
-	z-index: 1;
+	z-index: 11;
 	@include transition(400ms, all, ease-in-out);
 }
 .nav-icon:hover {
@@ -25,6 +25,7 @@
 
 .navigation-container.open {
 	width: 300px;
+	z-index: 11;
 }
 
 .navigation-container .navigation-inner-container {
