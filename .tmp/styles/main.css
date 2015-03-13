@@ -7764,12 +7764,12 @@ svg {
   top: 40px;
   left: 40px;
   z-index: 1;
-  transition: 250ms all ease-in-out;
+  transition: 400ms all ease-in-out;
 }
 
 .nav-icon:hover {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
 }
 
 .navigation-container {
