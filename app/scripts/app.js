@@ -3,9 +3,6 @@
 
 // Instantiates global instances / events
 (function($) {
-	$('.parallax-layer').bgParallax();
-	$('.header-section').bgParallax();
-	$('.house-image').bgParallax();
 
 
   // Section animation waypoints

@@ -701,8 +701,10 @@ svg {
 
 .section.header {
   height: 100vh;
+  height: 100%;
   margin: 0 auto;
   width: 100vh;
+  width: 100%;
 }
 .section.header h1 {
   opacity: 1;
@@ -8128,6 +8130,182 @@ body li a:hover {
   top: 18%;
 }
 
+/* mobile/tablet screen */
+@media screen and (max-width: 767px) {
+  .title .headline {
+    font-size: 38px;
+    margin: 340px auto;
+    text-align: center;
+    z-index: 0;
+    position: relative;
+    padding-left: 0;
+  }
+
+  .house-image.anglo-saxon {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.norman {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.angevin {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.plantagenet {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.lancastrian {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.yorkist1 {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.tudor1 {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.stuart {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.protectorate-stuart {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.hanoverian {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.saxe-coburg-gotha {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.windsor {
+    height: 58%;
+    margin: 0 auto;
+    position: relative;
+    float: none;
+    right: 0;
+    width: 25%;
+    top: 39%;
+    z-index: 10;
+  }
+
+  .house-image.anglo-saxon {
+    width: 247px;
+    height: 167px;
+  }
+
+  .house-image.norman {
+    height: 165px;
+    width: 150px;
+  }
+
+  .house-image.angevin,
+  .house-image.plantagenet,
+  .house-image.lancastrian,
+  .house-image.yorkist1 {
+    height: 180px;
+    width: 154px;
+    top: 33%;
+  }
+
+  .house-image.tudor1,
+  .house-image.stuart,
+  .house-image.hanoverian,
+  .house-image.saxe-coburg-gotha {
+    height: 213px;
+    width: 213px;
+  }
+
+  .house-image.windsor {
+    width: 140px;
+    height: 178px;
+    top: 67%;
+  }
+}
 .footer {
   background-color: #444;
   height: 40px;

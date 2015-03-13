@@ -165,6 +165,64 @@ body li a:hover {
 	top: 18%;
 }
 
+/* mobile/tablet screen */
+@media screen and (max-width: 767px) {
+
+	.title .headline {
+		font-size: 38px;
+		margin: 340px auto;
+		text-align: center;
+		z-index: 0;
+		position: relative;
+		padding-left: 0;
+	}
+
+	@each $house in anglo-saxon norman angevin plantagenet lancastrian yorkist1 tudor1 stuart protectorate-stuart hanoverian saxe-coburg-gotha windsor {
+
+	  .house-image.#{$house} {
+	    height: 58%;
+	    margin: 0 auto;
+	    position: relative;
+	    float: none;
+	    right: 0;
+	    width: 25%;
+		top: 39%;
+		z-index: 10;
+	  }
+	}
+	.house-image.anglo-saxon {
+		width: 247px;
+		height: 167px;
+	}
+
+	.house-image.norman {
+		height: 165px;
+		width: 150px;
+	}
+
+	.house-image.angevin,
+	.house-image.plantagenet,
+	.house-image.lancastrian,
+	.house-image.yorkist1 {
+		height: 180px;
+		width: 154px;
+		top: 33%;
+	}
+
+	.house-image.tudor1,
+	.house-image.stuart,
+	.house-image.hanoverian,
+	.house-image.saxe-coburg-gotha {
+		height: 213px;
+		width: 213px;
+	}
+	.house-image.windsor {
+		width: 140px;
+		height: 178px;
+		top: 67%;
+	}	
+}
+
 .footer{
 	background-color: #444;
 	height: 40px;
