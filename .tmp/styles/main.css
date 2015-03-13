@@ -1,4 +1,789 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'moon_flowerregular';
+  src: url("../fonts/moon_flower-webfont.eot");
+  src: url("../fonts/moon_flower-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moon_flower-webfont.woff2") format("woff2"), url("../fonts/moon_flower-webfont.woff") format("woff"), url("../fonts/moon_flower-webfont.ttf") format("truetype"), url("../fonts/moon_flower-webfont.svg#moon_flowerregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'exo_2regular';
+  src: url("../fonts/exo2-regular-webfont.eot");
+  src: url("../fonts/exo2-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/exo2-regular-webfont.woff2") format("woff2"), url("../fonts/exo2-regular-webfont.woff") format("woff"), url("../fonts/exo2-regular-webfont.ttf") format("truetype"), url("../fonts/exo2-regular-webfont.svg#exo_2regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'exo_2light';
+  src: url("../fonts/exo2-light-webfont.eot");
+  src: url("../fonts/exo2-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/exo2-light-webfont.woff2") format("woff2"), url("../fonts/exo2-light-webfont.woff") format("woff"), url("../fonts/exo2-light-webfont.ttf") format("truetype"), url("../fonts/exo2-light-webfont.svg#exo_2light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'exo_2thin';
+  src: url("../fonts/exo2-thin-webfont.eot");
+  src: url("../fonts/exo2-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/exo2-thin-webfont.woff2") format("woff2"), url("../fonts/exo2-thin-webfont.woff") format("woff"), url("../fonts/exo2-thin-webfont.ttf") format("truetype"), url("../fonts/exo2-thin-webfont.svg#exo_2thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.animate-section {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translateY(200px);
+  transform: translateY(200px);
+  transition: all .5s ease-in-out;
+}
+
+.line.animate-section {
+  height: 0;
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+}
+
+.line.animate-section.visible {
+  height: 400px;
+}
+
+.animate-section.visible {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.royal {
+  margin: 0 auto;
+  max-width: 650px;
+  min-height: 400px;
+}
+.royal:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.line {
+  background-color: #f7f7f7;
+  height: 300px;
+  margin: 30px auto 0;
+  padding: 60px 0;
+  width: 1px;
+}
+
+svg {
+  margin: 10px auto;
+  max-width: 640px;
+}
+
+.path {
+  stroke-dashoffset: 1000;
+  stroke-dasharray: 1000;
+}
+
+.information-container {
+  background-color: #F6f6f6;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.information-container ul li {
+  color: #7F8085;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.information-container.open {
+  opacity: 1;
+}
+
+.read-more {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.read-more .glyphicon.glyphicon-chevron-down {
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.read-more .glyphicon.glyphicon-chevron-down.closed {
+  -webkit-animation: arrowReturn 1s ease-in-out;
+  /* Chrome, Safari, Opera */
+  animation: arrowReturn 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s !important;
+  /* Chrome, Safari, Opera */
+  animation-delay: 0s !important;
+}
+
+.read-more .glyphicon.glyphicon-chevron-down.flip {
+  -webkit-animation: arrowFlip 1s ease-in-out;
+  /* Chrome, Safari, Opera */
+  animation: arrowFlip 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: .25s !important;
+  /* Chrome, Safari, Opera */
+  animation-delay: .25s !important;
+}
+
+@keyframes arrowFlip {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) translateY(-33px);
+            transform: rotate(180deg) translateY(-33px);
+  }
+  100% {
+    -webkit-transform: rotate(180deg) translateX(50px) translateY(-33px);
+            transform: rotate(180deg) translateX(50px) translateY(-33px);
+  }
+}
+@-webkit-keyframes arrowFlip {
+  0% {
+    -webkit-transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) translateY(-33px);
+  }
+  100% {
+    -webkit-transform: rotate(180deg) translateX(50px) translateY(-33px);
+  }
+}
+@keyframes arrowReturn {
+  0% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes arrowReturn {
+  0% {
+    -webkit-transform: rotate(180deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+.royal .alfred {
+  background-image: url("../images/royals/anglo-saxon/alfred.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .athelstan {
+  background-image: url("../images/royals/anglo-saxon/athelstan.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .canute {
+  background-image: url("../images/royals/anglo-saxon/canute.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edgar {
+  background-image: url("../images/royals/anglo-saxon/edgar.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edmund {
+  background-image: url("../images/royals/anglo-saxon/edmund.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edmund2 {
+  background-image: url("../images/royals/anglo-saxon/edmund2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edred {
+  background-image: url("../images/royals/anglo-saxon/edred.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward-elder {
+  background-image: url("../images/royals/anglo-saxon/edward-elder.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward-martyr {
+  background-image: url("../images/royals/anglo-saxon/edward-martyr.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edwardconfessor {
+  background-image: url("../images/royals/anglo-saxon/edwardconfessor.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .egbert {
+  background-image: url("../images/royals/anglo-saxon/egbert.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .ethelred-unready {
+  background-image: url("../images/royals/anglo-saxon/ethelred-unready.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .hardicanute {
+  background-image: url("../images/royals/anglo-saxon/hardicanute.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .harold1 {
+  background-image: url("../images/royals/anglo-saxon/harold1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .harold2 {
+  background-image: url("../images/royals/anglo-saxon/harold2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .offa {
+  background-image: url("../images/royals/anglo-saxon/offa.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry1 {
+  background-image: url("../images/royals/normans/henry1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .stephen {
+  background-image: url("../images/royals/normans/stephen.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william1 {
+  background-image: url("../images/royals/normans/william1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william2 {
+  background-image: url("../images/royals/normans/william2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry2 {
+  background-image: url("../images/royals/angevins/henry2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .richard1 {
+  background-image: url("../images/royals/angevins/richard1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .john {
+  background-image: url("../images/royals/angevins/john.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry3 {
+  background-image: url("../images/royals/plantagenets/henry3.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward1 {
+  background-image: url("../images/royals/plantagenets/edward1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward2 {
+  background-image: url("../images/royals/plantagenets/edward2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward3 {
+  background-image: url("../images/royals/plantagenets/edward3.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .richard2 {
+  background-image: url("../images/royals/plantagenets/richard2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry4 {
+  background-image: url("../images/royals/lancastrians/henry4.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry5 {
+  background-image: url("../images/royals/lancastrians/henry5.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry6 {
+  background-image: url("../images/royals/lancastrians/henry6.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward4 {
+  background-image: url("../images/royals/yorkists/edward4.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward5 {
+  background-image: url("../images/royals/yorkists/edward5.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .richard3 {
+  background-image: url("../images/royals/yorkists/richard3.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry7 {
+  background-image: url("../images/royals/tudors/henry7.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .henry8 {
+  background-image: url("../images/royals/tudors/henry8.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward6 {
+  background-image: url("../images/royals/tudors/edward6.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .mary1 {
+  background-image: url("../images/royals/tudors/mary1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .elizabeth1 {
+  background-image: url("../images/royals/tudors/elizabeth1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .james1 {
+  background-image: url("../images/royals/stuarts/james1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .charles1 {
+  background-image: url("../images/royals/stuarts/charles1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .charles2 {
+  background-image: url("../images/royals/stuarts/charles2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .james2 {
+  background-image: url("../images/royals/stuarts/james2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william3 {
+  background-image: url("../images/royals/stuarts/william3.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .anne {
+  background-image: url("../images/royals/stuarts/anne.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george1 {
+  background-image: url("../images/royals/hanoverians/george1.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george2 {
+  background-image: url("../images/royals/hanoverians/george2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george3 {
+  background-image: url("../images/royals/hanoverians/george3.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george4 {
+  background-image: url("../images/royals/hanoverians/george4.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .william4 {
+  background-image: url("../images/royals/hanoverians/william4.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .victoria {
+  background-image: url("../images/royals/hanoverians/victoria.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward7 {
+  background-image: url("../images/royals/saxe-coburg-gotha/edward7.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george5 {
+  background-image: url("../images/royals/windsor/george5.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .edward8 {
+  background-image: url("../images/royals/windsor/edward8.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .george6 {
+  background-image: url("../images/royals/windsor/george6.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.royal .elizabeth2 {
+  background-image: url("../images/royals/windsor/elizabeth2.jpg");
+  background-repeat: no-repeat;
+  height: 225px;
+  margin: 0 auto;
+  width: 140px;
+}
+
+.nav-icon {
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+  transition: 400ms all ease-in-out;
+}
+
+.nav-icon:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+}
+
+.navigation-container {
+  background-color: #444;
+  height: 100vh;
+  left: 0;
+  opacity: 0.8;
+  overflow: hidden;
+  position: fixed;
+  text-align: left;
+  top: 0;
+  width: 0;
+  transition: 500ms all ease-in-out;
+}
+
+.navigation-container.open {
+  width: 300px;
+}
+
+.navigation-container .navigation-inner-container {
+  padding-top: 120px;
+}
+
+.navigation-container h4,
+.navigation-container .navigation {
+  position: absolute;
+  width: 300px;
+}
+
+.navigation-container h4 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 26px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.navigation-container .navigation {
+  padding-top: 80px;
+}
+
+.navigation-container .navigation li {
+  list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navigation-container h4,
+.navigation-container .navigation li a {
+  color: #fff;
+}
+
+.navigation-container .navigation li a {
+  cursor: pointer;
+}
+
+.section.header {
+  height: 100vh;
+  margin: 0 auto;
+  width: 100vh;
+}
+.section.header h1 {
+  opacity: 1;
+  font-family: 'Old Standard TT', serif;
+  margin: 40% auto;
+}
+
+.cssanimations .section.header h1 {
+  opacity: 0;
+  margin: 0 auto;
+  -webkit-animation: fadeIn 2s ease-in-out;
+  /* Chrome, Safari, Opera */
+  animation: fadeIn 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s !important;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1s !important;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(80px);
+  }
+}
+.scroll-top {
+  position: fixed;
+  z-index: 1;
+  bottom: 50px;
+  right: 50px;
+}
+
+.scroll-top {
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  transition: all 400ms ease-in-out;
+}
+
+.scroll-top a {
+  position: absolute;
+  color: #444;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  padding-top: 38px;
+  font-family: 'Old Standard TT', serif;
+  text-decoration: none;
+}
+
+.scroll-top:hover {
+  opacity: 1;
+}
+.scroll-top:hover a {
+  color: #7F8085;
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -7051,6 +7836,8 @@ body {
   background-color: #7F8085;
   background-position: 0 0;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
 }
 
 body h2 {
@@ -7093,6 +7880,170 @@ body li a:hover {
     width: 90%;
   }
 }
+.parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+}
+
+.header-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #EDEEF0;
+  height: 35vh;
+  width: 100%;
+}
+
+.title .headline {
+  color: #222;
+  font-family: 'Old Standard TT', serif;
+  font-size: 48px;
+  position: absolute;
+  padding-left: 40px;
+  top: 65%;
+  z-index: 0;
+}
+
+.house-image.angevin {
+  background-image: url("../images/coat-of-arms/angevin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.anglo-saxon {
+  background-image: url("../images/coat-of-arms/anglo-saxon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.hanoverian {
+  background-image: url("../images/coat-of-arms/hanoverian.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.lancastrian {
+  background-image: url("../images/coat-of-arms/lancastrian.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.norman {
+  background-image: url("../images/coat-of-arms/norman.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.plantagenet {
+  background-image: url("../images/coat-of-arms/plantagenet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.protectorate-stuart {
+  background-image: url("../images/coat-of-arms/protectorate-stuart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.saxe-coburg-gotha {
+  background-image: url("../images/coat-of-arms/saxe-coburg-gotha.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.stuart {
+  background-image: url("../images/coat-of-arms/stuart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.tudor1 {
+  background-image: url("../images/coat-of-arms/tudor1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.windsor {
+  background-image: url("../images/coat-of-arms/windsor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.yorkist1 {
+  background-image: url("../images/coat-of-arms/yorkist1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 58%;
+  position: absolute;
+  width: 25%;
+}
+
+.house-image.anglo-saxon {
+  width: 493px;
+  height: 334px;
+  float: right;
+  right: 5%;
+  top: 39%;
+  z-index: 10;
+}
+
 .footer {
   background-color: #444;
   height: 40px;
@@ -7124,789 +8075,4 @@ body li a:hover {
   padding: 10px 0;
   background: #0e141b;
   z-index: 9999;
-}
-
-@font-face {
-  font-family: 'moon_flowerregular';
-  src: url("../fonts/moon_flower-webfont.eot");
-  src: url("../fonts/moon_flower-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/moon_flower-webfont.woff2") format("woff2"), url("../fonts/moon_flower-webfont.woff") format("woff"), url("../fonts/moon_flower-webfont.ttf") format("truetype"), url("../fonts/moon_flower-webfont.svg#moon_flowerregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'exo_2regular';
-  src: url("../fonts/exo2-regular-webfont.eot");
-  src: url("../fonts/exo2-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/exo2-regular-webfont.woff2") format("woff2"), url("../fonts/exo2-regular-webfont.woff") format("woff"), url("../fonts/exo2-regular-webfont.ttf") format("truetype"), url("../fonts/exo2-regular-webfont.svg#exo_2regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'exo_2light';
-  src: url("../fonts/exo2-light-webfont.eot");
-  src: url("../fonts/exo2-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/exo2-light-webfont.woff2") format("woff2"), url("../fonts/exo2-light-webfont.woff") format("woff"), url("../fonts/exo2-light-webfont.ttf") format("truetype"), url("../fonts/exo2-light-webfont.svg#exo_2light") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'exo_2thin';
-  src: url("../fonts/exo2-thin-webfont.eot");
-  src: url("../fonts/exo2-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/exo2-thin-webfont.woff2") format("woff2"), url("../fonts/exo2-thin-webfont.woff") format("woff"), url("../fonts/exo2-thin-webfont.ttf") format("truetype"), url("../fonts/exo2-thin-webfont.svg#exo_2thin") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-.animate-section {
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transform: translateY(200px);
-  transform: translateY(200px);
-  transition: all .5s ease-in-out;
-}
-
-.line.animate-section {
-  height: 0;
-  overflow: hidden;
-  transition: all 2s ease-in-out;
-}
-
-.line.animate-section.visible {
-  height: 400px;
-}
-
-.animate-section.visible {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-}
-
-.royal {
-  margin: 0 auto;
-  max-width: 650px;
-  min-height: 400px;
-}
-.royal:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.line {
-  background-color: #f7f7f7;
-  height: 300px;
-  margin: 30px auto 0;
-  padding: 60px 0;
-  width: 1px;
-}
-
-svg {
-  margin: 10px auto;
-  max-width: 640px;
-}
-
-.path {
-  stroke-dashoffset: 1000;
-  stroke-dasharray: 1000;
-}
-
-.information-container {
-  background-color: #F6f6f6;
-  overflow: hidden;
-  margin-top: 20px;
-  transition: all 0.5s ease-in-out;
-}
-.information-container ul li {
-  color: #7F8085;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  list-style-type: none;
-}
-
-.information-container.open {
-  opacity: 1;
-}
-
-.read-more {
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.read-more .glyphicon.glyphicon-chevron-down {
-  margin-left: 10px;
-  transition: all 0.5s ease-in-out;
-}
-
-.read-more .glyphicon.glyphicon-chevron-down.closed {
-  -webkit-animation: arrowReturn 1s ease-in-out;
-  /* Chrome, Safari, Opera */
-  animation: arrowReturn 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s !important;
-  /* Chrome, Safari, Opera */
-  animation-delay: 0s !important;
-}
-
-.read-more .glyphicon.glyphicon-chevron-down.flip {
-  -webkit-animation: arrowFlip 1s ease-in-out;
-  /* Chrome, Safari, Opera */
-  animation: arrowFlip 1s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .25s !important;
-  /* Chrome, Safari, Opera */
-  animation-delay: .25s !important;
-}
-
-@keyframes arrowFlip {
-  0% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg) translateY(-33px);
-            transform: rotate(180deg) translateY(-33px);
-  }
-  100% {
-    -webkit-transform: rotate(180deg) translateX(50px) translateY(-33px);
-            transform: rotate(180deg) translateX(50px) translateY(-33px);
-  }
-}
-@-webkit-keyframes arrowFlip {
-  0% {
-    -webkit-transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(180deg) translateY(-33px);
-  }
-  100% {
-    -webkit-transform: rotate(180deg) translateX(50px) translateY(-33px);
-  }
-}
-@keyframes arrowReturn {
-  0% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes arrowReturn {
-  0% {
-    -webkit-transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-  }
-}
-.royal .alfred {
-  background-image: url("../images/royals/anglo-saxon/alfred.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .athelstan {
-  background-image: url("../images/royals/anglo-saxon/athelstan.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .canute {
-  background-image: url("../images/royals/anglo-saxon/canute.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edgar {
-  background-image: url("../images/royals/anglo-saxon/edgar.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edmund {
-  background-image: url("../images/royals/anglo-saxon/edmund.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edmund2 {
-  background-image: url("../images/royals/anglo-saxon/edmund2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edred {
-  background-image: url("../images/royals/anglo-saxon/edred.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward-elder {
-  background-image: url("../images/royals/anglo-saxon/edward-elder.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward-martyr {
-  background-image: url("../images/royals/anglo-saxon/edward-martyr.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edwardconfessor {
-  background-image: url("../images/royals/anglo-saxon/edwardconfessor.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .egbert {
-  background-image: url("../images/royals/anglo-saxon/egbert.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .ethelred-unready {
-  background-image: url("../images/royals/anglo-saxon/ethelred-unready.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .hardicanute {
-  background-image: url("../images/royals/anglo-saxon/hardicanute.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .harold1 {
-  background-image: url("../images/royals/anglo-saxon/harold1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .harold2 {
-  background-image: url("../images/royals/anglo-saxon/harold2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .offa {
-  background-image: url("../images/royals/anglo-saxon/offa.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry1 {
-  background-image: url("../images/royals/normans/henry1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .stephen {
-  background-image: url("../images/royals/normans/stephen.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .william1 {
-  background-image: url("../images/royals/normans/william1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .william2 {
-  background-image: url("../images/royals/normans/william2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry2 {
-  background-image: url("../images/royals/angevins/henry2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .richard1 {
-  background-image: url("../images/royals/angevins/richard1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .john {
-  background-image: url("../images/royals/angevins/john.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry3 {
-  background-image: url("../images/royals/plantagenets/henry3.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward1 {
-  background-image: url("../images/royals/plantagenets/edward1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward2 {
-  background-image: url("../images/royals/plantagenets/edward2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward3 {
-  background-image: url("../images/royals/plantagenets/edward3.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .richard2 {
-  background-image: url("../images/royals/plantagenets/richard2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry4 {
-  background-image: url("../images/royals/lancastrians/henry4.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry5 {
-  background-image: url("../images/royals/lancastrians/henry5.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry6 {
-  background-image: url("../images/royals/lancastrians/henry6.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward4 {
-  background-image: url("../images/royals/yorkists/edward4.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward5 {
-  background-image: url("../images/royals/yorkists/edward5.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .richard3 {
-  background-image: url("../images/royals/yorkists/richard3.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry7 {
-  background-image: url("../images/royals/tudors/henry7.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .henry8 {
-  background-image: url("../images/royals/tudors/henry8.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward6 {
-  background-image: url("../images/royals/tudors/edward6.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .mary1 {
-  background-image: url("../images/royals/tudors/mary1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .elizabeth1 {
-  background-image: url("../images/royals/tudors/elizabeth1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .james1 {
-  background-image: url("../images/royals/stuarts/james1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .charles1 {
-  background-image: url("../images/royals/stuarts/charles1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .charles2 {
-  background-image: url("../images/royals/stuarts/charles2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .james2 {
-  background-image: url("../images/royals/stuarts/james2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .william3 {
-  background-image: url("../images/royals/stuarts/william3.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .anne {
-  background-image: url("../images/royals/stuarts/anne.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .george1 {
-  background-image: url("../images/royals/hanoverians/george1.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .george2 {
-  background-image: url("../images/royals/hanoverians/george2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .george3 {
-  background-image: url("../images/royals/hanoverians/george3.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .george4 {
-  background-image: url("../images/royals/hanoverians/george4.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .william4 {
-  background-image: url("../images/royals/hanoverians/william4.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .victoria {
-  background-image: url("../images/royals/hanoverians/victoria.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward7 {
-  background-image: url("../images/royals/saxe-coburg-gotha/edward7.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .george5 {
-  background-image: url("../images/royals/windsor/george5.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .edward8 {
-  background-image: url("../images/royals/windsor/edward8.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .george6 {
-  background-image: url("../images/royals/windsor/george6.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.royal .elizabeth2 {
-  background-image: url("../images/royals/windsor/elizabeth2.jpg");
-  background-repeat: no-repeat;
-  height: 225px;
-  margin: 0 auto;
-  width: 140px;
-}
-
-.nav-icon {
-  cursor: pointer;
-  position: fixed;
-  top: 40px;
-  left: 40px;
-  z-index: 1;
-  transition: 400ms all ease-in-out;
-}
-
-.nav-icon:hover {
-  transform: scale(1.03);
-  -webkit-transform: scale(1.03);
-}
-
-.navigation-container {
-  background-color: #444;
-  height: 100vh;
-  left: 0;
-  opacity: 0.8;
-  overflow: hidden;
-  position: fixed;
-  text-align: left;
-  top: 0;
-  width: 0;
-  transition: 500ms all ease-in-out;
-}
-
-.navigation-container.open {
-  width: 300px;
-}
-
-.navigation-container .navigation-inner-container {
-  padding-top: 120px;
-}
-
-.navigation-container h4,
-.navigation-container .navigation {
-  position: absolute;
-  width: 300px;
-}
-
-.navigation-container h4 {
-  font-family: 'Old Standard TT', serif;
-  font-size: 26px;
-  padding-left: 40px;
-  padding-top: 20px;
-}
-
-.navigation-container .navigation {
-  padding-top: 80px;
-}
-
-.navigation-container .navigation li {
-  list-style-type: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navigation-container h4,
-.navigation-container .navigation li a {
-  color: #fff;
-}
-
-.navigation-container .navigation li a {
-  cursor: pointer;
-}
-
-.section.header {
-  height: 100vh;
-  margin: 0 auto;
-  width: 100vh;
-}
-.section.header h1 {
-  opacity: 1;
-  font-family: 'Old Standard TT', serif;
-  margin: 40% auto;
-}
-
-.cssanimations .section.header h1 {
-  opacity: 0;
-  margin: 0 auto;
-  -webkit-animation: fadeIn 2s ease-in-out;
-  /* Chrome, Safari, Opera */
-  animation: fadeIn 2s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s !important;
-  /* Chrome, Safari, Opera */
-  animation-delay: 1s !important;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(80px);
-            transform: translateY(80px);
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(80px);
-  }
-}
-.scroll-top {
-  position: fixed;
-  z-index: 1;
-  bottom: 50px;
-  right: 50px;
-}
-
-.scroll-top {
-  border: none;
-  cursor: pointer;
-  opacity: 0.5;
-  background-color: #fff;
-  border-radius: 10px;
-  height: 100px;
-  width: 100px;
-  border-radius: 50px;
-  transition: all 400ms ease-in-out;
-}
-
-.scroll-top a {
-  position: absolute;
-  color: #444;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  padding-top: 38px;
-  font-family: 'Old Standard TT', serif;
-  text-decoration: none;
-}
-
-.scroll-top:hover {
-  opacity: 1;
-}
-.scroll-top:hover a {
-  color: #7F8085;
 }

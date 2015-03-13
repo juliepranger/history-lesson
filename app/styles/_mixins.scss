@@ -26,3 +26,8 @@
   -webkit-transition: $property $time $ease;
   transition: $property $time $ease;
 }
+
+@mixin parallax-dimensions { 
+  width: 100%;
+  width: 100vw;
+}

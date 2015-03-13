@@ -1,3 +1,12 @@
+// app partials
+@import "mixins";
+@import "fonts";
+@import "sectionAnimations";
+@import "royals";
+@import "nav";
+@import "header";
+@import "scroll";
+
 $icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
 
 // bower:scss
@@ -16,6 +25,8 @@ body {
 	background-color: #7F8085;
 	background-position: 0 0;
 	background-repeat: no-repeat;
+	position: relative;
+	z-index: 3;
 }
 
 body h2 {
@@ -58,6 +69,67 @@ body li a:hover {
   	width: 90%;
   }
 }
+.parallax {
+  perspective: 1px;
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+.header-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #EDEEF0;
+  height: 35vh;
+  width: 100%;
+}
+
+.title .headline {
+	color: #222;
+	font-family: 'Old Standard TT', serif;
+	font-size: 48px;
+	position: absolute;
+	padding-left: 40px;
+	top: 65%;
+	z-index: 0;
+}
+
+@each $house in angevin anglo-saxon hanoverian lancastrian norman plantagenet protectorate-stuart saxe-coburg-gotha stuart tudor1 windsor yorkist1 {
+
+  .house-image.#{$house} {
+    background-image: url('../images/coat-of-arms/#{$house}.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 58%;
+    position: absolute;
+    width: 25%;
+  }
+}
+
+.house-image.anglo-saxon {
+	width: 493px;
+	height: 334px;
+	float: right;
+	right: 5%;
+	top: 39%;
+	z-index: 10;
+}
+
 
 .footer{
 	background-color: #444;
@@ -92,11 +164,3 @@ body li a:hover {
 	z-index: 9999;
 }
 
-// app partials
-@import "mixins";
-@import "fonts";
-@import "sectionAnimations";
-@import "royals";
-@import "nav";
-@import "header";
-@import "scroll";
