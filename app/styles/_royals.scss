@@ -33,12 +33,11 @@ svg {
 	margin-top: 20px;
 	@include transition(all, .5s, ease-in-out);
 
-	ul {
-		padding-top: 40px;
-	}
 	ul li {
 		color: #7F8085;
 		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		list-style-type: none;
 	}
 }
@@ -54,9 +53,16 @@ svg {
 
 .read-more .glyphicon.glyphicon-chevron-down {
 	margin-left: 10px;
-	-webkit-transform: rotate(0deg);
-	transform: rotate(0deg);
 	@include transition(all, .5s, ease-in-out);
+}
+
+.read-more .glyphicon.glyphicon-chevron-down.closed {
+    -webkit-animation: arrowReturn 1s ease-in-out; /* Chrome, Safari, Opera */
+    animation: arrowReturn 1s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+  	animation-fill-mode: forwards;
+	-webkit-animation-delay: 0s !important; /* Chrome, Safari, Opera */
+	animation-delay: 0s !important;  
 }
 
 .read-more .glyphicon.glyphicon-chevron-down.flip {
@@ -95,7 +101,32 @@ svg {
     }
 }
 
+@keyframes arrowReturn {
+    0% {
+      transform: rotate(180deg);
+    }
 
+    50% {
+      transform: rotate(0deg);  
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes arrowReturn {
+    0% {
+      -webkit-transform: rotate(180deg);
+    }
+
+    50% {
+      -webkit-transform: rotate(0deg);  
+    }
+
+    100% {
+      -webkit-transform: rotate(0deg);
+    }
+}
 @each $royal in alfred athelstan canute edgar edmund edmund2 edred edward-elder edward-martyr edwardconfessor egbert ethelred-unready hardicanute harold1 harold2 offa {
 
   .royal .#{$royal} {

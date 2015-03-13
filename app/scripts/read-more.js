@@ -32,6 +32,7 @@ readMoreController.prototype.attachClickListener = function(el, index) {
 	if (infoContainer.classList.contains('open')) {
 		infoContainer.classList.remove('open');
 		arrow.classList.remove('flip');
+		arrow.classList.add('closed');
 		infoContainer.style.height = '0px';
 	} else {
 		
