@@ -16,9 +16,12 @@
 	@include transition(all, 400ms, ease-in-out);
 }
 .scroll-top a {
+	position: absolute;
 	color: #444;
-	top: 38px;
-	position: relative;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	padding-top: 38px;
 	font-family: 'Old Standard TT', serif;
 	text-decoration: none;
 }
