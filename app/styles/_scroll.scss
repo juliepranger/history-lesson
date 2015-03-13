@@ -4,3 +4,28 @@
 	bottom: 50px;
 	right: 50px;
 }
+.scroll-top {
+	border: none;
+	cursor: pointer;
+	opacity: 0.5;
+	background-color: #fff;
+	border-radius: 10px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	@include transition(all, 400ms, ease-in-out);
+}
+.scroll-top a {
+	color: #444;
+	top: 38px;
+	position: relative;
+	font-family: 'Old Standard TT', serif;
+	text-decoration: none;
+}
+.scroll-top:hover {
+	opacity: 1;
+
+	a {
+		color: #7F8085;
+	}
+}
