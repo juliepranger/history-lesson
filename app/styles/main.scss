@@ -69,6 +69,22 @@ body li a:hover {
   	width: 90%;
   }
 }
+
+.desktop {
+	display: block;
+
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+	}
+}
 .parallax {
   perspective: 1px;
   height: 50vh;

@@ -5,10 +5,22 @@
 	left: 40px;
 	z-index: 11;
 	@include transition(400ms, all, ease-in-out);
+
+	@media screen and (max-width: 767px) {
+		transform: scale(0.7);
+		-webkit-transform: scale(0.7);
+		-ms-transform: scale(0.7);
+	}
 }
 .nav-icon:hover {
 	transform: scale(1.03);
 	-webkit-transform: scale(1.03);
+
+	@media screen and (max-width: 767px) {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+	}		
 }
 .navigation-container {
 	background-color: #444;
