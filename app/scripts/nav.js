@@ -10,7 +10,6 @@ navController = function() {
 	});
 
 	this.navContainer.addEventListener('click', function(e) {
-		console.log(e.target);
 		ctrl.closeNav();
 	})
 

@@ -2,7 +2,7 @@ var app = angular.module('historyLesson', []);
 
 app.controller('ScrollController', function ($scope, $location, ScrollService) {
 
-	var ctrl = this;
+  var ctrl = this;
 
   this.ctrl = $scope;
 
