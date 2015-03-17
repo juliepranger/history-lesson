@@ -38,6 +38,10 @@ body h4 {
 	font-size: 32px;
 	font-weight: 400;
 	margin-top: 20px;
+
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+	}
 }
 
 body p {
@@ -74,7 +78,7 @@ body li a:hover {
 	display: block;
 
 	@media screen and (max-width: 767px) {
-		display: none;
+		display: none !important;
 	}
 }
 
@@ -82,12 +86,12 @@ body li a:hover {
 	display: none;
 
 	@media screen and (max-width: 767px) {
-		display: block;
+		display: block !important;
 	}
 }
 .parallax {
   perspective: 1px;
-  height: 50vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -111,7 +115,7 @@ body li a:hover {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #EDEEF0;
-  height: 35vh;
+  height: 50vh;
   width: 100%;
 }
 
@@ -184,13 +188,24 @@ body li a:hover {
 /* mobile/tablet screen */
 @media screen and (max-width: 767px) {
 
+	.parallax {
+		height: 70vh;
+	}
+
+	.header-section {
+		height: 55vh;
+	}
+
 	.title .headline {
 		font-size: 38px;
-		margin: 340px auto;
-		text-align: center;
+		margin: 450px auto;
+		text-align: left;
 		z-index: 0;
 		position: relative;
-		padding-left: 0;
+
+		&.plantagenet {
+			margin: 390px auto;
+		}
 	}
 
 	@each $house in anglo-saxon norman angevin plantagenet lancastrian yorkist1 tudor1 stuart protectorate-stuart hanoverian saxe-coburg-gotha windsor {
@@ -199,7 +214,6 @@ body li a:hover {
 	    height: 58%;
 	    margin: 0 auto;
 	    position: relative;
-	    float: none;
 	    right: 0;
 	    width: 25%;
 		top: 39%;
@@ -225,6 +239,18 @@ body li a:hover {
 		top: 33%;
 	}
 
+	.house-image.plantagenet {
+		top: 47%;
+	}
+
+	.house-image.lancastrian {
+		top: 59%;
+	}
+
+	.house-image.hanoverian {
+		top: 52%;
+	}
+
 	.house-image.tudor1,
 	.house-image.stuart,
 	.house-image.hanoverian,
@@ -235,7 +261,7 @@ body li a:hover {
 	.house-image.windsor {
 		width: 140px;
 		height: 178px;
-		top: 67%;
+		top: 42%;
 	}	
 }
 
@@ -272,3 +298,10 @@ body li a:hover {
 	z-index: 9999;
 }
 
+@media screen and (max-width: 500px) {
+
+	.title .headline {
+		float: left;
+		max-width: 50%;
+	}
+}

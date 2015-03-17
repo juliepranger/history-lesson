@@ -14,6 +14,10 @@
 	margin: 30px auto 0;
 	padding: 60px 0;
 	width: 1px;
+
+	@media screen and (max-width: 767px) {
+		height: 150px;
+	}
 }
 
 svg {
@@ -31,6 +35,10 @@ svg {
 	overflow: hidden;
 	margin-top: 20px;
 	@include transition(all, .5s, ease-in-out);
+
+	ul {
+		padding: 20px;
+	}
 
 	ul li {
 		color: #7F8085;
@@ -70,7 +78,11 @@ svg {
 	-webkit-animation-fill-mode: forwards;
   	animation-fill-mode: forwards;
 	-webkit-animation-delay: .25s !important; /* Chrome, Safari, Opera */
-	animation-delay: .25s !important;  
+	animation-delay: .25s !important;
+
+	@media screen and (max-width: 767px) {
+		top: -2px;
+	}
 }
 
 @keyframes arrowFlip {

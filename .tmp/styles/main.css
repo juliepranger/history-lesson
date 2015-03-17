@@ -72,6 +72,11 @@
   padding: 60px 0;
   width: 1px;
 }
+@media screen and (max-width: 767px) {
+  .line {
+    height: 150px;
+  }
+}
 
 svg {
   margin: 10px auto;
@@ -88,6 +93,9 @@ svg {
   overflow: hidden;
   margin-top: 20px;
   transition: all 0.5s ease-in-out;
+}
+.information-container ul {
+  padding: 20px;
 }
 .information-container ul li {
   color: #7F8085;
@@ -131,6 +139,11 @@ svg {
   -webkit-animation-delay: .25s !important;
   /* Chrome, Safari, Opera */
   animation-delay: .25s !important;
+}
+@media screen and (max-width: 767px) {
+  .read-more .glyphicon.glyphicon-chevron-down.flip {
+    top: -2px;
+  }
 }
 
 @keyframes arrowFlip {
@@ -641,9 +654,11 @@ svg {
 }
 @media screen and (max-width: 767px) {
   .nav-icon {
-    transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    -ms-transform: scale(0.7);
+    top: 20px;
+    left: 20px;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
   }
 }
 
@@ -653,9 +668,9 @@ svg {
 }
 @media screen and (max-width: 767px) {
   .nav-icon:hover {
-    transform: scale(0.8);
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
   }
 }
 
@@ -718,7 +733,6 @@ svg {
   height: 100vh;
   margin: 0 auto;
   width: 100%;
-  width: 100vh;
 }
 .section.header h1 {
   opacity: 1;
@@ -814,9 +828,6 @@ svg {
   z-index: 1;
   bottom: 50px;
   right: 50px;
-}
-
-.scroll-top {
   border: none;
   cursor: pointer;
   opacity: 0.5;
@@ -826,13 +837,6 @@ svg {
   width: 100px;
   border-radius: 50px;
   transition: all 400ms ease-in-out;
-}
-@media screen and (max-width: 767px) {
-  .scroll-top {
-    background-color: transparent;
-    height: 20px;
-    width: 20px;
-  }
 }
 
 .scroll-top a {
@@ -858,6 +862,15 @@ svg {
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 767px) {
+  .scroll-top {
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -7924,6 +7937,11 @@ body h4 {
   font-weight: 400;
   margin-top: 20px;
 }
+@media screen and (max-width: 767px) {
+  body h4 {
+    font-size: 18px;
+  }
+}
 
 body p {
   font-family: Roboto, arial, sans-serif;
@@ -7959,7 +7977,7 @@ body li a:hover {
 }
 @media screen and (max-width: 767px) {
   .desktop {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -7968,14 +7986,14 @@ body li a:hover {
 }
 @media screen and (max-width: 767px) {
   .mobile {
-    display: block;
+    display: block !important;
   }
 }
 
 .parallax {
   -webkit-perspective: 1px;
           perspective: 1px;
-  height: 50vh;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -8005,7 +8023,7 @@ body li a:hover {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: #EDEEF0;
-  height: 35vh;
+  height: 50vh;
   width: 100%;
 }
 
@@ -8220,20 +8238,29 @@ body li a:hover {
 
 /* mobile/tablet screen */
 @media screen and (max-width: 767px) {
+  .parallax {
+    height: 70vh;
+  }
+
+  .header-section {
+    height: 55vh;
+  }
+
   .title .headline {
     font-size: 38px;
-    margin: 340px auto;
-    text-align: center;
+    margin: 450px auto;
+    text-align: left;
     z-index: 0;
     position: relative;
-    padding-left: 0;
+  }
+  .title .headline.plantagenet {
+    margin: 390px auto;
   }
 
   .house-image.anglo-saxon {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8244,7 +8271,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8255,7 +8281,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8266,7 +8291,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8277,7 +8301,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8288,7 +8311,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8299,7 +8321,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8310,7 +8331,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8321,7 +8341,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8332,7 +8351,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8343,7 +8361,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8354,7 +8371,6 @@ body li a:hover {
     height: 58%;
     margin: 0 auto;
     position: relative;
-    float: none;
     right: 0;
     width: 25%;
     top: 39%;
@@ -8380,6 +8396,18 @@ body li a:hover {
     top: 33%;
   }
 
+  .house-image.plantagenet {
+    top: 47%;
+  }
+
+  .house-image.lancastrian {
+    top: 59%;
+  }
+
+  .house-image.hanoverian {
+    top: 52%;
+  }
+
   .house-image.tudor1,
   .house-image.stuart,
   .house-image.hanoverian,
@@ -8391,7 +8419,7 @@ body li a:hover {
   .house-image.windsor {
     width: 140px;
     height: 178px;
-    top: 67%;
+    top: 42%;
   }
 }
 .footer {
@@ -8425,4 +8453,11 @@ body li a:hover {
   padding: 10px 0;
   background: #0e141b;
   z-index: 9999;
+}
+
+@media screen and (max-width: 500px) {
+  .title .headline {
+    float: left;
+    max-width: 50%;
+  }
 }

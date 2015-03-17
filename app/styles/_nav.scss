@@ -7,9 +7,11 @@
 	@include transition(400ms, all, ease-in-out);
 
 	@media screen and (max-width: 767px) {
-		transform: scale(0.7);
-		-webkit-transform: scale(0.7);
-		-ms-transform: scale(0.7);
+		top: 20px;
+		left: 20px;
+		transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-ms-transform: scale(0.5);
 	}
 }
 .nav-icon:hover {
@@ -17,9 +19,9 @@
 	-webkit-transform: scale(1.03);
 
 	@media screen and (max-width: 767px) {
-		transform: scale(0.8);
-		-webkit-transform: scale(0.8);
-		-ms-transform: scale(0.8);
+		transform: scale(0.6);
+		-webkit-transform: scale(0.6);
+		-ms-transform: scale(0.6);
 	}		
 }
 .navigation-container {

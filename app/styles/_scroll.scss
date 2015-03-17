@@ -3,8 +3,6 @@
 	z-index: 1;
 	bottom: 50px;
 	right: 50px;
-}
-.scroll-top {
 	border: none;
 	cursor: pointer;
 	opacity: 0.5;
@@ -15,11 +13,6 @@
 	border-radius: 50px;
 	@include transition(all, 400ms, ease-in-out);
 
-	@media screen and (max-width: 767px) {
-		background-color: transparent;
-		height: 20px;
-		width: 20px;
-	}
 }
 .scroll-top a {
 	position: absolute;
@@ -42,4 +35,14 @@
 
 .scroll-top .glyphicon.mobile {
 	font-size: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+	.scroll-top {
+		background-color: transparent;
+		height: 20px;
+		width: 20px;
+		bottom: 20px;
+		right: 20px;		
+	}
 }
