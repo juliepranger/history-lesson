@@ -11,7 +11,7 @@ app.controller('ScrollController', function ($scope, $location, ScrollService) {
   this.ScrollService = ScrollService;
 
 	this.ctrl.goToElement = function(elementId, opt_offset) {
-		ctrl.locale.hash(elementId);
+		ctrl.locale.url(elementId);
 		ctrl.ScrollService.scrollTo(elementId, opt_offset);		
 	}
 });
