@@ -734,42 +734,48 @@ svg {
   margin: 0 auto;
   width: 100%;
 }
-.section.header h1 {
+.section.header .svg-container {
   opacity: 1;
   font-family: 'Old Standard TT', serif;
   margin: 40% auto;
 }
 @media screen and (max-width: 767px) {
-  .section.header h1 {
+  .section.header .svg-container {
     font-size: 28px;
     margin: 20% auto;
   }
 }
+.section.header .svg-container {
+  position: relative;
+  height: 42px;
+  width: 602px;
+}
+.section.header #svg-headline {
+  position: relative;
+  height: 42px;
+  width: 602px;
+}
 
-.cssanimations .section.header h1 {
-  opacity: 0;
+.cssanimations .section.header .svg-container {
+  opacity: 1;
   margin: 0 auto;
-  -webkit-animation: fadeIn 2s ease-in-out;
-  /* Chrome, Safari, Opera */
-  animation: fadeIn 2s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s !important;
-  /* Chrome, Safari, Opera */
-  animation-delay: 1s !important;
+  /*  -webkit-animation: fadeIn 2s ease-in-out; 
+    animation: fadeIn 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; 
+    -webkit-animation-delay: 1s !important; 
+    animation-delay: 1s !important;*/
 }
 @media screen and (max-width: 767px) {
-  .cssanimations .section.header h1 {
-    opacity: 0;
+  .cssanimations .section.header .svg-container {
+    opacity: 1;
     margin: 0 auto;
-    -webkit-animation: fadeInMobile 2s ease-in-out;
-    /* Chrome, Safari, Opera */
-    animation: fadeInMobile 2s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 1s !important;
-    /* Chrome, Safari, Opera */
-    animation-delay: 1s !important;
+    /*    -webkit-animation: fadeInMobile 2s ease-in-out; 
+        animation: fadeInMobile 2s ease-in-out;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; 
+        -webkit-animation-delay: 1s !important; 
+        animation-delay: 1s !important;  */
   }
 }
 
@@ -821,6 +827,27 @@ svg {
   100% {
     opacity: 1;
     -webkit-transform: translateY(20px);
+  }
+}
+.title {
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: draw 8s ease-in-out forwards;
+  -webkit-animation: draw 8s ease-in-out forwards;
+  -moz-animation: draw 8s ease-in-out forwards;
+  -o-animation: draw 8s ease-in-out forwards;
+  -webkit-animation-delay: 2s !important;
+  animation-delay: 2s !important;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
   }
 }
 .scroll-top {

@@ -4,7 +4,7 @@
 	margin: 0 auto;
   width: 100%;
 
-	h1 {
+	.svg-container {
 		opacity: 1;
 		font-family: 'Old Standard TT', serif;
 		margin: 40% auto;
@@ -14,27 +14,39 @@
       margin: 20% auto;
     }
 	}
+
+  .svg-container {
+    position: relative;
+    height: 42px;
+    width: 602px;    
+  }
+
+  #svg-headline {
+    position: relative;
+    height: 42px;
+    width: 602px;
+  }
 }
 
-.cssanimations .section.header h1 {
-  opacity: 0;
+.cssanimations .section.header .svg-container {
+  opacity: 1;
   margin: 0 auto;
-  -webkit-animation: fadeIn 2s ease-in-out; /* Chrome, Safari, Opera */
+/*  -webkit-animation: fadeIn 2s ease-in-out; 
   animation: fadeIn 2s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; 
-  -webkit-animation-delay: 1s !important; /* Chrome, Safari, Opera */
-  animation-delay: 1s !important;
+  -webkit-animation-delay: 1s !important; 
+  animation-delay: 1s !important;*/
 
   @media screen and (max-width: 767px) {
-    opacity: 0;
+    opacity: 1;
     margin: 0 auto;
-    -webkit-animation: fadeInMobile 2s ease-in-out; /* Chrome, Safari, Opera */
+/*    -webkit-animation: fadeInMobile 2s ease-in-out; 
     animation: fadeInMobile 2s ease-in-out;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
-    -webkit-animation-delay: 1s !important; /* Chrome, Safari, Opera */
-    animation-delay: 1s !important;    
+    -webkit-animation-delay: 1s !important; 
+    animation-delay: 1s !important;  */  
   }
 }
 
@@ -87,3 +99,35 @@
       -webkit-transform: translateY(20px);
     }
 }
+
+.title {
+        stroke-dasharray: 250;
+                stroke-dashoffset: 250;
+        animation: draw 8s ease-in-out forwards;
+        -webkit-animation: draw 8s ease-in-out forwards;
+        -moz-animation: draw 8s ease-in-out forwards;
+        -o-animation: draw 8s ease-in-out forwards;
+        -webkit-animation-delay: 2s !important; 
+        animation-delay: 2s !important;
+        }
+        @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+        @-webkit-keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+
+        @-moz-keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
+        @-o-keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+            }
+        }
