@@ -649,7 +649,7 @@ svg {
   position: fixed;
   top: 40px;
   left: 40px;
-  z-index: 11;
+  z-index: 12;
   transition: 400ms all ease-in-out;
 }
 @media screen and (max-width: 767px) {
@@ -703,7 +703,7 @@ svg {
 }
 
 .navigation-container h4 {
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Mauritius', serif;
   font-size: 26px;
   padding-left: 40px;
   padding-top: 20px;
@@ -736,7 +736,7 @@ svg {
 }
 .section.header .svg-container {
   opacity: 1;
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Mauritius', serif;
   margin: 40% auto;
 }
 @media screen and (max-width: 767px) {
@@ -750,32 +750,44 @@ svg {
   height: 42px;
   width: 602px;
 }
+@media screen and (max-width: 767px) {
+  .section.header .svg-container {
+    width: 100%;
+    height: auto;
+  }
+}
 .section.header #svg-headline {
   position: relative;
   height: 42px;
   width: 602px;
 }
+@media screen and (max-width: 767px) {
+  .section.header #svg-headline {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .cssanimations .section.header .svg-container {
   opacity: 1;
   margin: 0 auto;
-  /*  -webkit-animation: fadeIn 2s ease-in-out; 
-    animation: fadeIn 2s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards; 
-    -webkit-animation-delay: 1s !important; 
-    animation-delay: 1s !important;*/
+  -webkit-animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s !important;
+  animation-delay: 1s !important;
 }
 @media screen and (max-width: 767px) {
   .cssanimations .section.header .svg-container {
     opacity: 1;
     margin: 0 auto;
-    /*    -webkit-animation: fadeInMobile 2s ease-in-out; 
-        animation: fadeInMobile 2s ease-in-out;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards; 
-        -webkit-animation-delay: 1s !important; 
-        animation-delay: 1s !important;  */
+    -webkit-animation: fadeInMobile 2s ease-in-out;
+    animation: fadeInMobile 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s !important;
+    animation-delay: 1s !important;
   }
 }
 
@@ -873,7 +885,7 @@ svg {
   width: 100%;
   left: 0;
   padding-top: 38px;
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Mauritius', serif;
   text-decoration: none;
 }
 
@@ -8056,7 +8068,7 @@ body li a:hover {
 
 .title .headline {
   color: #222;
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Mauritius', serif;
   font-size: 48px;
   position: absolute;
   padding-left: 40px;
@@ -8463,7 +8475,7 @@ body li a:hover {
 }
 
 .citations {
-  font-family: 'Old Standard TT', serif;
+  font-family: 'Mauritius', serif;
   left: 47%;
 }
 .citations a {

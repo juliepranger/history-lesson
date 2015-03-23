@@ -6,7 +6,7 @@
 
 	.svg-container {
 		opacity: 1;
-		font-family: 'Old Standard TT', serif;
+		font-family: 'Mauritius', serif;
 		margin: 40% auto;
 
     @media screen and (max-width: 767px) {
@@ -18,35 +18,45 @@
   .svg-container {
     position: relative;
     height: 42px;
-    width: 602px;    
+    width: 602px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: auto;
+    } 
   }
 
   #svg-headline {
     position: relative;
     height: 42px;
     width: 602px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      height: auto;
+    } 
   }
 }
 
 .cssanimations .section.header .svg-container {
   opacity: 1;
   margin: 0 auto;
-/*  -webkit-animation: fadeIn 2s ease-in-out; 
+  -webkit-animation: fadeIn 2s ease-in-out; 
   animation: fadeIn 2s ease-in-out;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; 
   -webkit-animation-delay: 1s !important; 
-  animation-delay: 1s !important;*/
+  animation-delay: 1s !important;
 
   @media screen and (max-width: 767px) {
     opacity: 1;
     margin: 0 auto;
-/*    -webkit-animation: fadeInMobile 2s ease-in-out; 
+    -webkit-animation: fadeInMobile 2s ease-in-out; 
     animation: fadeInMobile 2s ease-in-out;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; 
     -webkit-animation-delay: 1s !important; 
-    animation-delay: 1s !important;  */  
+    animation-delay: 1s !important;    
   }
 }
 
@@ -102,7 +112,7 @@
 
 .title {
         stroke-dasharray: 250;
-                stroke-dashoffset: 250;
+        stroke-dashoffset: 250;
         animation: draw 8s ease-in-out forwards;
         -webkit-animation: draw 8s ease-in-out forwards;
         -moz-animation: draw 8s ease-in-out forwards;

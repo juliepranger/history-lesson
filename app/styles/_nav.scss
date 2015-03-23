@@ -3,7 +3,7 @@
 	position: fixed;
 	top: 40px;
 	left: 40px;
-	z-index: 11;
+	z-index: 12;
 	@include transition(400ms, all, ease-in-out);
 
 	@media screen and (max-width: 767px) {
@@ -52,7 +52,7 @@
 	width: 300px;
 }
 .navigation-container h4 {
-	font-family: 'Old Standard TT', serif;
+	font-family: 'Mauritius', serif;
 	font-size: 26px;
 	padding-left: 40px;
 	padding-top: 20px;
