@@ -109,8 +109,12 @@ svg {
   opacity: 1;
 }
 
-.read-more {
+.read-more,
+.glyphicon {
   cursor: pointer;
+}
+
+.read-more {
   margin-top: 20px;
 }
 
@@ -691,6 +695,11 @@ svg {
   width: 300px;
   z-index: 11;
 }
+@media screen and (max-width: 767px) {
+  .navigation-container.open {
+    width: 250px;
+  }
+}
 
 .navigation-container .navigation-inner-container {
   padding-top: 120px;
@@ -701,12 +710,23 @@ svg {
   position: absolute;
   width: 300px;
 }
+@media screen and (max-width: 767px) {
+  .navigation-container h4,
+  .navigation-container .navigation {
+    width: 250px;
+  }
+}
 
 .navigation-container h4 {
   font-family: 'Mauritius', serif;
   font-size: 26px;
   padding-left: 40px;
   padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .navigation-container h4 {
+    font-size: 18px;
+  }
 }
 
 .navigation-container .navigation {
@@ -717,6 +737,11 @@ svg {
   list-style-type: none;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .navigation-container .navigation li {
+    font-size: 13px;
+  }
 }
 
 .navigation-container h4,
@@ -8500,6 +8525,10 @@ body li a:hover {
 }
 
 @media screen and (max-width: 500px) {
+  .parallax {
+    height: 50vh;
+  }
+
   .title .headline {
     float: left;
     max-width: 50%;

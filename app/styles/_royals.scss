@@ -53,8 +53,12 @@ svg {
 	opacity: 1;
 }
 
-.read-more {
+.read-more,
+.glyphicon {
 	cursor: pointer;
+}
+
+.read-more {
 	margin-top: 20px;
 }
 

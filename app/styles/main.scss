@@ -305,6 +305,10 @@ body li a:hover {
 
 @media screen and (max-width: 500px) {
 
+	.parallax {
+		height: 50vh;
+	}
+	
 	.title .headline {
 		float: left;
 		max-width: 50%;
